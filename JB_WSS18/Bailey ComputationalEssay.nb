@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     50486,       1000]
-NotebookOptionsPosition[     33000,        654]
-NotebookOutlinePosition[     46426,        947]
-CellTagsIndexPosition[     46383,        944]
+NotebookDataLength[     84603,       1833]
+NotebookOptionsPosition[     66889,       1483]
+NotebookOutlinePosition[     80315,       1776]
+CellTagsIndexPosition[     80272,       1773]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -147,17 +147,23 @@ Cell["", "CodeText",
    3.7391701968089166`*^9}},ExpressionUUID->"6047e34c-4783-4ed0-b0de-\
 5328517365be"],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{"Code", " ", 
   RowBox[{"(*", " ", 
    RowBox[{
    "call", " ", "into", " ", "the", " ", "neural", " ", "network", " ", 
-    "environment"}], " ", "*)"}]}]], "Input",
+    "environment"}], " ", "*)"}]}]], "Code",
  CellChangeTimes->{{3.735483764882769*^9, 3.735483804136156*^9}, {
   3.735486531590019*^9, 3.735486538965722*^9}, {3.735486839352989*^9, 
-  3.735486841416996*^9}, {3.7391702860030575`*^9, 
-  3.7391702992220383`*^9}},ExpressionUUID->"6a57f104-ade9-4e69-9c46-\
-f4f2c59d53ab"]
+  3.735486841416996*^9}, {3.7391702860030575`*^9, 3.7391702992220383`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"6a57f104-ade9-4e69-9c46-f4f2c59d53ab"],
+
+Cell[BoxData["Code"], "Output",
+ CellChangeTimes->{3.7392077470172253`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"90b10720-4b04-4e41-a34a-52593764c3be"]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -262,13 +268,13 @@ Cell[BoxData[
        "\[CloseCurlyDoubleQuote]"}], ",", 
       RowBox[{"\[OpenCurlyDoubleQuote]", 
        RowBox[{"girl", " ", "home", " ", "in", " ", "trouble"}], 
-       "\[CloseCurlyDoubleQuote]"}]}], "}"}]}]}], "Code"]], "Input",
+       "\[CloseCurlyDoubleQuote]"}]}], "}"}]}]}], "Code"]], "Code",
  CellChangeTimes->{{3.7354839684812403`*^9, 3.735483992816681*^9}, {
   3.735486827194744*^9, 3.735486831464959*^9}, {3.736868703273498*^9, 
   3.7368687066462917`*^9}, {3.7391708051762276`*^9, 3.7391708555378213`*^9}, {
-  3.7391785115057063`*^9, 
-  3.739178520346633*^9}},ExpressionUUID->"e3998e4d-7b72-4f12-ab60-\
-8520725af581"]
+  3.7391785115057063`*^9, 3.739178520346633*^9}},
+ EmphasizeSyntaxErrors->True,
+ CellLabel->"In[2]:=",ExpressionUUID->"e3998e4d-7b72-4f12-ab60-8520725af581"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -295,17 +301,26 @@ immense lump which dignifies them.\[CloseCurlyDoubleQuote]\n\n",
    3.7391779875460005`*^9},ExpressionUUID->"72b00745-65c9-40a3-989b-\
 179e50d3deb4"],
 
-Cell[TextData[StyleBox["neighborEventsList := { \"death of old man\" , \
-\"death of old man\" , \"death of old man\" , \"death of old man\" , \"death \
-of young man leaving family\" , \"death of young man leaving family\" , \
-\"death of an infant\" , \"case of sunstroke, with delirium\" , \
-\"<<500000>>\" , \"case of hemorrhage with fits\" , \"girl home in trouble\" \
-}", "Code"]], "Text",
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"neighborEventsList", " ", ":=", " ", 
+   RowBox[{"{", " ", 
+    RowBox[{
+    "\"\<death of old man\>\"", " ", ",", " ", "\"\<death of old man\>\"", 
+     " ", ",", " ", "\"\<death of old man\>\"", " ", ",", " ", 
+     "\"\<death of old man\>\"", " ", ",", " ", 
+     "\"\<death of young man leaving family\>\"", " ", ",", " ", 
+     "\"\<death of young man leaving family\>\"", " ", ",", " ", 
+     "\"\<death of an infant\>\"", " ", ",", " ", 
+     "\"\<case of sunstroke, with delirium\>\"", " ", ",", " ", 
+     "\"\<<<500000>>\>\"", " ", ",", " ", 
+     "\"\<case of hemorrhage with fits\>\"", " ", ",", " ", 
+     "\"\<girl home in trouble\>\""}], " ", "}"}]}], "Code"]], "Code",
  CellChangeTimes->{{3.7368686183251553`*^9, 3.736868627072585*^9}, {
   3.7391709330612173`*^9, 3.73917095194742*^9}, {3.73917098214318*^9, 
-  3.739171034603341*^9}, {3.7391780002914796`*^9, 
-  3.7391780002914796`*^9}},ExpressionUUID->"b67135a8-6669-431e-8529-\
-378eb17fb7b0"],
+  3.739171034603341*^9}, {3.7391780002914796`*^9, 3.7391780002914796`*^9}, {
+  3.7392076494135237`*^9, 3.7392076494211845`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"b67135a8-6669-431e-8529-378eb17fb7b0"],
 
 Cell["\<\
 And notice that these two versions of the symbol \
@@ -382,28 +397,45 @@ by the example of the cystic fibrosis gene, which has impact all by itself.\
    3.7391782385303454`*^9}},ExpressionUUID->"e209cfc4-2993-4e39-9aa4-\
 6ca59e1bea0b"],
 
-Cell[TextData[{
- StyleBox["cysticFibrosis := list[ CFTRgene ] ;", "Code"],
- "\n\nThat is not how genes in general work. Genetics is a world where \
-hundreds of genes work together to have influence in multiple places.It takes \
-an immense lump of them:"
-}], "Text",
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{"cysticFibrosis", " ", ":=", " ", 
+    RowBox[{"list", "[", " ", "CFTRgene", " ", "]"}]}], ";"}], 
+  "Code"]], "Code",
+ CellChangeTimes->{{3.7392075266531324`*^9, 3.739207546580372*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"fef3c70b-6f9d-4d1b-9501-cf048e9bcc87"],
+
+Cell["\<\
+That is not how genes in general work. Genetics is a world where hundreds of \
+genes work together to have influence in multiple places.It takes an immense \
+lump of them:\
+\>", "Text",
  CellChangeTimes->{{3.7368686183251553`*^9, 3.736868647099249*^9}, 
    3.739171354909227*^9, {3.7391714322999516`*^9, 3.739171520548588*^9}, {
    3.7391715591933556`*^9, 3.7391715717464037`*^9}, {3.7391768809149766`*^9, 
    3.7391768809149766`*^9}, {3.7391772850006166`*^9, 3.7391772959245214`*^9}, 
-   3.7391783370795164`*^9},ExpressionUUID->"9de566ac-9609-419e-a8ab-\
+   3.7391783370795164`*^9, {3.7392074848877687`*^9, 3.7392074891021533`*^9}, {
+   3.7392075249943542`*^9, 
+   3.7392075309494543`*^9}},ExpressionUUID->"9de566ac-9609-419e-a8ab-\
 db3eb3c2ae34"],
 
-Cell[TextData[StyleBox["spatialReasoning := list[ geneABC , <<100>> , geneXYZ \
-] ;", "Code"]], "Text",
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{"spatialReasoning", " ", ":=", " ", 
+    RowBox[{"list", "[", " ", 
+     RowBox[{
+     "geneABC", " ", ",", " ", "\"\<<<100>>\>\"", " ", ",", " ", "geneXYZ"}], 
+     " ", "]"}]}], " ", ";"}], "Code"]], "Code",
  CellChangeTimes->{{3.7368686183251553`*^9, 3.736868647099249*^9}, 
    3.739171354909227*^9, {3.7391714322999516`*^9, 3.739171520548588*^9}, {
    3.7391715591933556`*^9, 3.7391715717464037`*^9}, {3.7391768809149766`*^9, 
    3.7391768809149766`*^9}, 3.7391772850006166`*^9, {3.739177414117838*^9, 
-   3.739177414117838*^9}, 
-   3.739178332896298*^9},ExpressionUUID->"154e74e9-8e12-41eb-a878-\
-9c080b0b499a"],
+   3.739177414117838*^9}, 3.739178332896298*^9, {3.739207621845031*^9, 
+   3.7392076218558064`*^9}, {3.7392080207439117`*^9, 3.7392080240681777`*^9}},
+ EmphasizeSyntaxErrors->
+  True,ExpressionUUID->"154e74e9-8e12-41eb-a878-9c080b0b499a"],
 
 Cell["\<\
 Kids today need to start their thinking with long (who cares how long) lists, \
@@ -466,133 +498,930 @@ individual.\[CloseCurlyDoubleQuote] \
    3.739177609734121*^9}},ExpressionUUID->"668410b2-1189-4abe-827e-\
 a4e728c41c45"],
 
-Cell[TextData[{
- "\n",
- StyleBox["horizontalGapDivisor := 8.0 / Max[ nodeList ] ;\n\
-availableVerticalSpace := graphHeight - topMargin -bottomMargin ;\n\
-verticalNodePixels := availableVerticalSpace / Max[ nodeList ] ;\n\
-availableVerticalDiameter := verticalNodePixels * verticalGapDivisor / ( \
-verticalGapDivisor + 1 ) ;\navailableHorizontalSpace := graphWidth - \
-leftMargin - rightMargin ;\nhorizontalNodePixels := availableHorizontalSpace \
-/ ( Length[ nodeList ] + 1 ) ;\navailableHorizontalDiameter := \
-horizontalNodePixels * horizontalGapDivisor / ( horizontalGapDivisor + 1 ) ;\n\
-nodeRadius:= 0.5 * Min[ availableVerticalDiameter , \
-availableHorizontalDiameter ] ;\nverticalGap := verticalNodePixels - \
-availableVerticalDiameter ;\nhorizontalGap := horizontalNodePixels - \
-nodeRadius ;\noutputNodeX := Length[ nodeList ] * ( 2 * nodeRadius + ( 2 / \
-horizontalGapDivisor ) *nodeRadius ) ;\nhorizontalIndent := 0.5 * ( \
-graphWidth - outputNodeX + leftMargin ) ;\n\nIf[ Length[ nodeList ] == 3 ,\n\
-verticalIndents := { 0 , 18 , 18 } ,\n(\nverticalIndents := {} ;\n\
-For[i=1,i<=Length[ nodeList ],i++,\nthisHiddenLayerNodeCount := nodeList[[ i  \
-]] ;\nthisHiddenLayerVerticalExtent := 2 * nodeRadius * \
-thisHiddenLayerNodeCount + verticalGap * ( thisHiddenLayerNodeCount - 1 ) ;\n\
-thisVerticalIndent := topMargin + 0.5 * ( graphHeight - topMargin - \
-bottomMargin - thisHiddenLayerVerticalExtent ) ;\nAppendTo[  verticalIndents \
-, thisVerticalIndent  ] ;\n] ;\n) ;\n] ;\n\nnodesXY := { } ;\ninputNodes := \
-{} ;\nhiddenNodes := {} ;\nouputNodes := {} ;\nFor[ overallLayers = 1 , \
-overallLayers <= Length[ nodeList ] , overallLayers++ ,\nFor[ \
-nodesInThisLayer = 1 , nodesInThisLayer <= nodeList[[ overallLayers  ]] , \
-nodesInThisLayer++,\ntempDouble := ( overallLayers - 1 ) * ( 2 * nodeRadius + \
-( 2.0 / horizontalGapDivisor ) * nodeRadius ) ;\nthisNodeX := \
-horizontalIndent + tempDouble ;\n\nIf[ overallLayers == 1 && nodeList[[1]] > \
-maxHiddenLayer ,\nthisNodeY := topMargin + nodeRadius + ( nodesInThisLayer - \
-1 ) * (2 * nodeRadius + verticalGap ) ,\nthisNodeY := verticalIndents[[ \
-overallLayers ]] + nodeRadius + ( nodesInThisLayer - 1 ) * (2 * nodeRadius + \
-verticalGap )\n] ;\n\nthisNodeXY := { { thisNodeX  , thisNodeY }  , \
-nodeRadius  } ;\nIf[ overallLayers==1 , AppendTo[ inputNodes , thisNodeXY ] , \
-, ] ;\nIf [overallLayers > 1 && overallLayers < Length[nodeList] - 1 , \
-AppendTo[ hiddenNodes , thisNodeXY ] , , ] ;\nIf[  overallLayers >= \
-Length[nodeList] - 1 ,AppendTo[ ouputNodes , thisNodeXY ] , , ] ;\nAppendTo[ \
-nodesXY , thisNodeXY ] ;\n] ;\n] ;\n\nthreeNodeTypes := {} ;\nAppendTo[ \
-threeNodeTypes , inputNodes ] ;\nAppendTo[ threeNodeTypes , hiddenNodes ] ;\n\
-AppendTo[ threeNodeTypes , ouputNodes ] ;\nReturn[  threeNodeTypes  ] ;\n)\n\n\
-(*****************************************************************************\
-****)\n\npositionAllLinks[ nodesPerLayer_ , nodeCenters_]:= \n(\nnodeXYs:= {} \
-;\nnodeRadii := {} ;\nFor[ i = 1 , i <= Length[ nodeCenters ] , i++ ,\n\
-AppendTo[ nodeXYs , Part[ nodeCenters[[ i ]] , 1 ] ] ;\nAppendTo[ nodeRadii , \
-Part[ nodeCenters[[ i ]] , 2 ] ] ;\n] ;\nlocalLayerCounts = Prepend[ \
-nodesPerLayer , 0 ] ;\n\nstart = 1 ;\nlayerCenters := {} ;\nlayerNodeRadii := \
-{} ;\nFor[ i = 1 , i < Length[ localLayerCounts ] , i++ ,(\nend = start + \
-localLayerCounts[[ i+1  ]] - 1 ;\nthislayerList := nodeXYs[[ start;;end ]] ;\n\
-AppendTo[ layerCenters , nodeXYs[[ start;;end ]]  ] ;\nAppendTo[ \
-layerNodeRadii , nodeRadii[[ start;;end ]] ] ;\nstart = start + \
-localLayerCounts[[ i+1  ]] ;\n)\n] ;\n\ncenterToCenterXYs = {} ;\n\
-croppedInputXYs = {} ;\ncroppedHiddenXYs = {} ;\ncroppedOutputXYs = {} ;\n\
-For[ i = 1 , i <= Length[ layerCenters ] - 1 , i++ , (\nsourceNodeList := \
-layerCenters[[i]] ;\ndestinationNodeList := layerCenters[[i+1]] ;\n\nFor[ j = \
-1 , j <= Length[ sourceNodeList ] , j++ , (\nFor[ k=1 , \
-k<=Length[destinationNodeList] , k++ , (\n\npoint1X := Part[ sourceNodeList[[ \
-j]] , 1 ] ;\npoint1Y := Part[ sourceNodeList[[ j]] , 2 ] ;\npoint2X := Part[ \
-destinationNodeList[[k]] , 1 ] ;\npoint2Y := Part[ destinationNodeList[[k]] , \
-2 ] ;\nradius1 := Part[ layerNodeRadii[[i]] , 1 ] ;\nradius2 := Part[ \
-layerNodeRadii[[i]] , 1 ] ;\n\ndeltaY := point2Y - point1Y ;\ndeltaX := \
-point2X - point1X ;\nlength := Sqrt[ deltaX * deltaX + deltaY * deltaY ] ;\n\
-r1L := radius1 / length ;\nr2L := radius2 / length ;\n\npoint1Y = \
-SetPrecision[ point1Y + deltaY * r1L, 4 ] ;\npoint2Y = SetPrecision[ point2Y \
-- deltaY * r2L, 4  ] ;\npoint1X = SetPrecision[  point1X + deltaX * r1L, 4  ] \
-;\npoint2X = SetPrecision[ point2X - deltaX * r2L, 4  ] ;\nthisCroppedXY := { \
-{ point1X , point1Y } , { point2X , point2Y } } ;\n\nIf[ i<2 , AppendTo[ \
-croppedInputXYs , thisCroppedXY ] , ] ;\nIf[ i>1 && i < Length[layerCenters ] \
-- 2 , AppendTo[ croppedHiddenXYs , thisCroppedXY ] , ] ;\nIf[ i>= \
-Length[layerCenters ] - 2 , AppendTo[ croppedOutputXYs , thisCroppedXY ] , ] \
-;\nAppendTo[ centerToCenterXYs , thisCroppedXY ] ;\n)\n] ;\n)\n] ;\n)\n] ;\n\
-threeLinkTypes := {} ;\nAppendTo[ threeLinkTypes , croppedInputXYs ] ;\n\
-AppendTo[ threeLinkTypes , croppedHiddenXYs ] ;\nAppendTo[ threeLinkTypes , \
-croppedOutputXYs ] ;\nReturn[  threeLinkTypes  ] ;\n)\n\n\
-(*****************************************************************************\
-*************)\n\nshowNeuralNetwork[ nodesPerLayerList_] := (\n\
-prunedLayerList = {} ;\nFor[ i = 1 , i <= Length[ nodesPerLayerList ] , i++ , \
-\nIf[ nodesPerLayerList[[i]] > 0 , AppendTo[ prunedLayerList , \
-nodesPerLayerList[[i]] ] , ] ;\n] ;\n\nsplitNodeCenterList := positionNodes[ \
-prunedLayerList ] ;\ninputLayerNodes := Part[ splitNodeCenterList , 1 ] ;\n\
-hiddenLayerNodes := Part[ splitNodeCenterList , 2 ] ;\noutputLayerNodes := \
-Part[ splitNodeCenterList , 3 ] ;\n\ninputNodesFontSize = 10.0 * nodeRadius ;\
-\ninputNodeLabels := {} ;\nFor[ q=1 , q <= Length[  inputLayerNodes ], q++ ,\n\
-thisNodeLayer = Part[ inputLayerNodes[[q]] , 1 ] ;\nthisNodeLayerXY = { Part[ \
-thisNodeLayer , 1  ] ,  Part[ thisNodeLayer , 2  ] - nodeRadius / 7.0 } ;\n\
-AppendTo[ inputNodeLabels , { \
-\[OpenCurlyDoubleQuote]X\[CloseCurlyDoubleQuote] , thisNodeLayerXY }  ] ;\n] \
-;\n\nhiddenNodesFontSize = 10.0 * nodeRadius ;\nhiddenNodeLabels := {} ;\n\
-For[ r=1 , r <= Length[  hiddenLayerNodes ], r++ ,\nthisNodeLayer = Part[ \
-hiddenLayerNodes[[r]] , 1 ] ;\nthisNodeLayerXY = { Part[ thisNodeLayer , 1  ] \
-,  Part[ thisNodeLayer , 2  ] - nodeRadius / 7.0 } ;\nAppendTo[ \
-hiddenNodeLabels , { \[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote] , \
-thisNodeLayerXY } ]\n];\n\noutputNodesFontSize = 10.0 * nodeRadius ;\n\
-outputNodeLabels := {} ;\nFor[ s=1 , s <= Length[  outputLayerNodes ], s++ ,\n\
-thisNodeLayer = Part[ outputLayerNodes[[s]] , 1 ] ;\nthisNodeLayerXY = { \
-Part[ thisNodeLayer , 1  ] ,  Part[ thisNodeLayer , 2  ] - nodeRadius / 7.0 } \
-;\nIf[ s==1 ,\nAppendTo[ outputNodeLabels , { \[OpenCurlyDoubleQuote]A\
-\[CloseCurlyDoubleQuote] , thisNodeLayerXY } ] ,\nAppendTo[ outputNodeLabels \
-, { \[OpenCurlyDoubleQuote]Y\[CloseCurlyDoubleQuote] , thisNodeLayerXY } ]\n] \
-;\n];\nhatFontSize = 18.0 * nodeRadius ;\nthisNodeLayer = Part[ \
-outputLayerNodes[[2]] , 1 ] ;\nthisNodeLayerXY = { Part[ thisNodeLayer , 1  ] \
-+ nodeRadius / 10.0 ,  Part[ thisNodeLayer , 2  ] - nodeRadius / 4.4 } ;\n\
-hatLabel = { { \[OpenCurlyDoubleQuote]\:02c6\[CloseCurlyDoubleQuote] , \
-thisNodeLayerXY } } ;\n\nnodeCenterList := Join[ inputLayerNodes , \
-hiddenLayerNodes , outputLayerNodes ] ;\ntripleNetworkLinks := \
-positionAllLinks[prunedLayerList , nodeCenterList] ;\ninputLayerLinks := \
-Part[ tripleNetworkLinks , 1 ] ;\nhiddenLayerLinks := Part[ \
-tripleNetworkLinks , 2 ] ;\noutputLayerLinks := Part[ tripleNetworkLinks , 3 \
-] ;\n\nGraphics[{ Thick , Arrowheads[Medium] ,\nMagenta , Arrow /@ \
-inputLayerLinks , \nGray , Arrow /@ hiddenLayerLinks , \nBlue , Arrow /@ \
-outputLayerLinks  , \n\nEdgeForm[{Magenta, Thick}], FaceForm[LightMagenta], \
-Disk @@@ inputLayerNodes , \nEdgeForm[{Gray, Thick}], \
-FaceForm[LightGray],Disk @@@ hiddenLayerNodes , \nEdgeForm[{Blue, Thick}],, \
-FaceForm[LightBlue] , Disk @@@ outputLayerNodes  , \n\nMagenta ,FontSize-> \
-inputNodesFontSize , Text @@@ inputNodeLabels ,\nBlack ,FontSize-> \
-hiddenNodesFontSize , Text @@@ hiddenNodeLabels ,\nBlue ,FontSize-> \
-outputNodesFontSize , Text @@@ outputNodeLabels ,\nBlue ,FontSize-> \
-hatFontSize , Text @@@ hatLabel\n\n}, \nImageSize->Full]\n\n) ;\n\n\
-showNeuralNetwork[ { 2 , 4  , 3 ,  4 , 1 , 1   } ] ;\[LineSeparator]\
-\[LineSeparator]", "Code"]
-}], "Text",
+Cell[BoxData[
+ RowBox[{"\n", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"positionNodes", "[", " ", "nodeList_", "]"}], " ", ":=", " ", 
+    RowBox[{"(", "\n", 
+     RowBox[{
+      RowBox[{"bottomMargin", " ", ":=", " ", "4"}], " ", ";", " ", 
+      RowBox[{"leftMargin", " ", ":=", " ", "4"}], " ", ";", " ", 
+      RowBox[{"topMargin", " ", ":=", " ", "4.5"}], " ", ";", " ", 
+      RowBox[{"rightMargin", " ", ":=", " ", "0"}], " ", ";", "\n", 
+      RowBox[{"graphHeight", " ", ":=", " ", "72"}], " ", ";", " ", 
+      RowBox[{"graphWidth", " ", ":=", " ", "100"}], " ", ";", "\n", "\n", 
+      RowBox[{"If", "[", " ", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Length", "[", " ", "nodeList", " ", "]"}], " ", "<", " ", 
+         "3"}], " ", ",", "\n", 
+        RowBox[{
+         RowBox[{"maxHiddenLayer", " ", ":=", " ", "1"}], " ", ";"}], " ", 
+        ",", "\n", 
+        RowBox[{
+         RowBox[{"maxHiddenLayer", " ", ":=", " ", 
+          RowBox[{"Max", "[", " ", 
+           RowBox[{"Part", "[", " ", 
+            RowBox[{"nodeList", "[", " ", 
+             RowBox[{"[", " ", 
+              RowBox[{"2", ";;", 
+               RowBox[{
+                RowBox[{"Length", "[", " ", "nodeList", " ", "]"}], " ", "-", 
+                "2"}]}], "]"}], " ", "]"}], " ", "]"}], " ", "]"}]}], " ", 
+         ";"}]}], "\n", "]"}], " ", ";", "\n", 
+      RowBox[{"verticalGapDivisor", " ", ":=", " ", "5"}], " ", ";", "\n", 
+      StyleBox[
+       RowBox[{"horizontalGapDivisor", " ", ":=", " ", 
+        RowBox[{"8.0", " ", "/", " ", 
+         RowBox[{"Max", "[", " ", "nodeList", " ", "]"}]}]}], "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"availableVerticalSpace", " ", ":=", " ", 
+        RowBox[{
+        "graphHeight", " ", "-", " ", "topMargin", " ", "-", 
+         "bottomMargin"}]}], "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"verticalNodePixels", " ", ":=", " ", 
+        RowBox[{"availableVerticalSpace", " ", "/", " ", 
+         RowBox[{"Max", "[", " ", "nodeList", " ", "]"}]}]}], "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"availableVerticalDiameter", " ", ":=", " ", 
+        RowBox[{"verticalNodePixels", " ", "*", " ", 
+         RowBox[{"verticalGapDivisor", " ", "/", " ", 
+          RowBox[{"(", " ", 
+           RowBox[{"verticalGapDivisor", " ", "+", " ", "1"}], " ", 
+           ")"}]}]}]}], "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"availableHorizontalSpace", " ", ":=", " ", 
+        RowBox[{
+        "graphWidth", " ", "-", " ", "leftMargin", " ", "-", " ", 
+         "rightMargin"}]}], "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"horizontalNodePixels", " ", ":=", " ", 
+        RowBox[{"availableHorizontalSpace", " ", "/", " ", 
+         RowBox[{"(", " ", 
+          RowBox[{
+           RowBox[{"Length", "[", " ", "nodeList", " ", "]"}], " ", "+", " ", 
+           "1"}], " ", ")"}]}]}], "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"availableHorizontalDiameter", " ", ":=", " ", 
+        RowBox[{"horizontalNodePixels", " ", "*", " ", 
+         RowBox[{"horizontalGapDivisor", " ", "/", " ", 
+          RowBox[{"(", " ", 
+           RowBox[{"horizontalGapDivisor", " ", "+", " ", "1"}], " ", 
+           ")"}]}]}]}], "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"nodeRadius", ":=", " ", 
+        RowBox[{"0.5", " ", "*", " ", 
+         RowBox[{"Min", "[", " ", 
+          RowBox[{
+          "availableVerticalDiameter", " ", ",", " ", 
+           "availableHorizontalDiameter"}], " ", "]"}]}]}], "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"verticalGap", " ", ":=", " ", 
+        RowBox[{
+        "verticalNodePixels", " ", "-", " ", "availableVerticalDiameter"}]}], 
+       "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"horizontalGap", " ", ":=", " ", 
+        RowBox[{"horizontalNodePixels", " ", "-", " ", "nodeRadius"}]}], 
+       "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"outputNodeX", " ", ":=", " ", 
+        RowBox[{
+         RowBox[{"Length", "[", " ", "nodeList", " ", "]"}], " ", "*", " ", 
+         RowBox[{"(", " ", 
+          RowBox[{
+           RowBox[{"2", " ", "*", " ", "nodeRadius"}], " ", "+", " ", 
+           RowBox[{
+            RowBox[{"(", " ", 
+             RowBox[{"2", " ", "/", " ", "horizontalGapDivisor"}], " ", ")"}],
+             " ", "*", "nodeRadius"}]}], " ", ")"}]}]}], "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"horizontalIndent", " ", ":=", " ", 
+        RowBox[{"0.5", " ", "*", " ", 
+         RowBox[{"(", " ", 
+          RowBox[{
+          "graphWidth", " ", "-", " ", "outputNodeX", " ", "+", " ", 
+           "leftMargin"}], " ", ")"}]}]}], "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"If", "[", " ", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Length", "[", " ", "nodeList", " ", "]"}], " ", "==", " ", 
+          "3"}], " ", ",", "\n", 
+         RowBox[{"verticalIndents", " ", ":=", " ", 
+          RowBox[{"{", " ", 
+           RowBox[{"0", " ", ",", " ", "18", " ", ",", " ", "18"}], " ", 
+           "}"}]}], " ", ",", "\n", 
+         RowBox[{
+          RowBox[{"(", "\n", 
+           RowBox[{
+            RowBox[{"verticalIndents", " ", ":=", " ", 
+             RowBox[{"{", "}"}]}], " ", ";", "\n", 
+            RowBox[{"For", "[", 
+             RowBox[{
+              RowBox[{"i", "=", "1"}], ",", 
+              RowBox[{"i", "<=", 
+               RowBox[{"Length", "[", " ", "nodeList", " ", "]"}]}], ",", 
+              RowBox[{"i", "++"}], ",", "\n", 
+              RowBox[{
+               RowBox[{"thisHiddenLayerNodeCount", " ", ":=", " ", 
+                RowBox[{"nodeList", "[", 
+                 RowBox[{"[", " ", "i", "  ", "]"}], "]"}]}], " ", ";", "\n", 
+               RowBox[{"thisHiddenLayerVerticalExtent", " ", ":=", " ", 
+                RowBox[{
+                 RowBox[{
+                 "2", " ", "*", " ", "nodeRadius", " ", "*", " ", 
+                  "thisHiddenLayerNodeCount"}], " ", "+", " ", 
+                 RowBox[{"verticalGap", " ", "*", " ", 
+                  RowBox[{"(", " ", 
+                   RowBox[{"thisHiddenLayerNodeCount", " ", "-", " ", "1"}], 
+                   " ", ")"}]}]}]}], " ", ";", "\n", 
+               RowBox[{"thisVerticalIndent", " ", ":=", " ", 
+                RowBox[{"topMargin", " ", "+", " ", 
+                 RowBox[{"0.5", " ", "*", " ", 
+                  RowBox[{"(", " ", 
+                   RowBox[{
+                   "graphHeight", " ", "-", " ", "topMargin", " ", "-", " ", 
+                    "bottomMargin", " ", "-", " ", 
+                    "thisHiddenLayerVerticalExtent"}], " ", ")"}]}]}]}], " ", 
+               ";", "\n", 
+               RowBox[{"AppendTo", "[", "  ", 
+                RowBox[{
+                "verticalIndents", " ", ",", " ", "thisVerticalIndent"}], 
+                "  ", "]"}], " ", ";"}]}], "\n", "]"}], " ", ";"}], "\n", 
+           ")"}], " ", ";"}]}], "\n", "]"}], "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"nodesXY", " ", ":=", " ", 
+        RowBox[{"{", " ", "}"}]}], "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"inputNodes", " ", ":=", " ", 
+        RowBox[{"{", "}"}]}], "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"hiddenNodes", " ", ":=", " ", 
+        RowBox[{"{", "}"}]}], "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"ouputNodes", " ", ":=", " ", 
+        RowBox[{"{", "}"}]}], "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"For", "[", " ", 
+        RowBox[{
+         RowBox[{"overallLayers", " ", "=", " ", "1"}], " ", ",", " ", 
+         RowBox[{"overallLayers", " ", "<=", " ", 
+          RowBox[{"Length", "[", " ", "nodeList", " ", "]"}]}], " ", ",", " ", 
+         RowBox[{"overallLayers", "++"}], " ", ",", "\n", 
+         RowBox[{
+          RowBox[{"For", "[", " ", 
+           RowBox[{
+            RowBox[{"nodesInThisLayer", " ", "=", " ", "1"}], " ", ",", " ", 
+            RowBox[{"nodesInThisLayer", " ", "<=", " ", 
+             RowBox[{"nodeList", "[", 
+              RowBox[{"[", " ", "overallLayers", "  ", "]"}], "]"}]}], " ", 
+            ",", " ", 
+            RowBox[{"nodesInThisLayer", "++"}], ",", "\n", 
+            RowBox[{
+             RowBox[{"tempDouble", " ", ":=", " ", 
+              RowBox[{
+               RowBox[{"(", " ", 
+                RowBox[{"overallLayers", " ", "-", " ", "1"}], " ", ")"}], 
+               " ", "*", " ", 
+               RowBox[{"(", " ", 
+                RowBox[{
+                 RowBox[{"2", " ", "*", " ", "nodeRadius"}], " ", "+", " ", 
+                 RowBox[{
+                  RowBox[{"(", " ", 
+                   RowBox[{"2.0", " ", "/", " ", "horizontalGapDivisor"}], 
+                   " ", ")"}], " ", "*", " ", "nodeRadius"}]}], " ", 
+                ")"}]}]}], " ", ";", "\n", 
+             RowBox[{"thisNodeX", " ", ":=", " ", 
+              RowBox[{"horizontalIndent", " ", "+", " ", "tempDouble"}]}], 
+             " ", ";", "\n", "\n", 
+             RowBox[{"If", "[", " ", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"overallLayers", " ", "==", " ", "1"}], " ", "&&", 
+                " ", 
+                RowBox[{
+                 RowBox[{"nodeList", "[", 
+                  RowBox[{"[", "1", "]"}], "]"}], " ", ">", " ", 
+                 "maxHiddenLayer"}]}], " ", ",", "\n", 
+               RowBox[{"thisNodeY", " ", ":=", " ", 
+                RowBox[{
+                "topMargin", " ", "+", " ", "nodeRadius", " ", "+", " ", 
+                 RowBox[{
+                  RowBox[{"(", " ", 
+                   RowBox[{"nodesInThisLayer", " ", "-", " ", "1"}], " ", 
+                   ")"}], " ", "*", " ", 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"2", " ", "*", " ", "nodeRadius"}], " ", "+", " ",
+                     "verticalGap"}], " ", ")"}]}]}]}], " ", ",", "\n", 
+               RowBox[{"thisNodeY", " ", ":=", " ", 
+                RowBox[{
+                 RowBox[{"verticalIndents", "[", 
+                  RowBox[{"[", " ", "overallLayers", " ", "]"}], "]"}], " ", 
+                 "+", " ", "nodeRadius", " ", "+", " ", 
+                 RowBox[{
+                  RowBox[{"(", " ", 
+                   RowBox[{"nodesInThisLayer", " ", "-", " ", "1"}], " ", 
+                   ")"}], " ", "*", " ", 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"2", " ", "*", " ", "nodeRadius"}], " ", "+", " ",
+                     "verticalGap"}], " ", ")"}]}]}]}]}], "\n", "]"}], " ", 
+             ";", "\n", "\n", 
+             RowBox[{"thisNodeXY", " ", ":=", " ", 
+              RowBox[{"{", " ", 
+               RowBox[{
+                RowBox[{"{", " ", 
+                 RowBox[{"thisNodeX", "  ", ",", " ", "thisNodeY"}], " ", 
+                 "}"}], "  ", ",", " ", "nodeRadius"}], "  ", "}"}]}], " ", 
+             ";", "\n", 
+             RowBox[{"If", "[", " ", 
+              RowBox[{
+               RowBox[{"overallLayers", "==", "1"}], " ", ",", " ", 
+               RowBox[{"AppendTo", "[", " ", 
+                RowBox[{"inputNodes", " ", ",", " ", "thisNodeXY"}], " ", 
+                "]"}], " ", ",", " ", ","}], " ", "]"}], " ", ";", "\n", 
+             RowBox[{"If", " ", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"overallLayers", " ", ">", " ", "1"}], " ", "&&", " ", 
+                RowBox[{"overallLayers", " ", "<", " ", 
+                 RowBox[{
+                  RowBox[{"Length", "[", "nodeList", "]"}], " ", "-", " ", 
+                  "1"}]}]}], " ", ",", " ", 
+               RowBox[{"AppendTo", "[", " ", 
+                RowBox[{"hiddenNodes", " ", ",", " ", "thisNodeXY"}], " ", 
+                "]"}], " ", ",", " ", ","}], " ", "]"}], " ", ";", "\n", 
+             RowBox[{"If", "[", "  ", 
+              RowBox[{
+               RowBox[{"overallLayers", " ", ">=", " ", 
+                RowBox[{
+                 RowBox[{"Length", "[", "nodeList", "]"}], " ", "-", " ", 
+                 "1"}]}], " ", ",", 
+               RowBox[{"AppendTo", "[", " ", 
+                RowBox[{"ouputNodes", " ", ",", " ", "thisNodeXY"}], " ", 
+                "]"}], " ", ",", " ", ","}], " ", "]"}], " ", ";", "\n", 
+             RowBox[{"AppendTo", "[", " ", 
+              RowBox[{"nodesXY", " ", ",", " ", "thisNodeXY"}], " ", "]"}], 
+             " ", ";"}]}], "\n", "]"}], " ", ";"}]}], "\n", "]"}], "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"threeNodeTypes", " ", ":=", " ", 
+        RowBox[{"{", "}"}]}], "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"AppendTo", "[", " ", 
+        RowBox[{"threeNodeTypes", " ", ",", " ", "inputNodes"}], " ", "]"}], 
+       "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"AppendTo", "[", " ", 
+        RowBox[{"threeNodeTypes", " ", ",", " ", "hiddenNodes"}], " ", "]"}], 
+       "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"AppendTo", "[", " ", 
+        RowBox[{"threeNodeTypes", " ", ",", " ", "ouputNodes"}], " ", "]"}], 
+       "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox[
+       RowBox[{"Return", "[", "  ", "threeNodeTypes", "  ", "]"}], "Code"], 
+      StyleBox[" ", "Code"], 
+      StyleBox[";", "Code"]}], 
+     StyleBox["\n", "Code"], 
+     StyleBox[")", "Code"]}]}], 
+   StyleBox["\n", "Code"], 
+   StyleBox["\n", "Code"], 
+   StyleBox[
+    RowBox[{
+    "(*", "********************************************************************************)"}\
+], "Code"], 
+   StyleBox["\n", "Code"], 
+   StyleBox["\n", "Code"], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"positionAllLinks", "[", " ", 
+      RowBox[{"nodesPerLayer_", " ", ",", " ", "nodeCenters_"}], "]"}], ":=", 
+     " ", "\n", 
+     RowBox[{"(", "\n", 
+      RowBox[{
+       RowBox[{"nodeXYs", ":=", " ", 
+        RowBox[{"{", "}"}]}], " ", ";", "\n", 
+       RowBox[{"nodeRadii", " ", ":=", " ", 
+        RowBox[{"{", "}"}]}], " ", ";", "\n", 
+       RowBox[{"For", "[", " ", 
+        RowBox[{
+         RowBox[{"i", " ", "=", " ", "1"}], " ", ",", " ", 
+         RowBox[{"i", " ", "<=", " ", 
+          RowBox[{"Length", "[", " ", "nodeCenters", " ", "]"}]}], " ", ",", 
+         " ", 
+         RowBox[{"i", "++"}], " ", ",", "\n", 
+         RowBox[{
+          RowBox[{"AppendTo", "[", " ", 
+           RowBox[{"nodeXYs", " ", ",", " ", 
+            RowBox[{"Part", "[", " ", 
+             RowBox[{
+              RowBox[{"nodeCenters", "[", 
+               RowBox[{"[", " ", "i", " ", "]"}], "]"}], " ", ",", " ", "1"}],
+              " ", "]"}]}], " ", "]"}], " ", ";", "\n", 
+          RowBox[{"AppendTo", "[", " ", 
+           RowBox[{"nodeRadii", " ", ",", " ", 
+            RowBox[{"Part", "[", " ", 
+             RowBox[{
+              RowBox[{"nodeCenters", "[", 
+               RowBox[{"[", " ", "i", " ", "]"}], "]"}], " ", ",", " ", "2"}],
+              " ", "]"}]}], " ", "]"}], " ", ";"}]}], "\n", "]"}], " ", ";", 
+       "\n", 
+       RowBox[{"localLayerCounts", " ", "=", " ", 
+        RowBox[{"Prepend", "[", " ", 
+         RowBox[{"nodesPerLayer", " ", ",", " ", "0"}], " ", "]"}]}], " ", 
+       ";", "\n", "\n", 
+       RowBox[{"start", " ", "=", " ", "1"}], " ", ";", "\n", 
+       RowBox[{"layerCenters", " ", ":=", " ", 
+        RowBox[{"{", "}"}]}], " ", ";", "\n", 
+       RowBox[{"layerNodeRadii", " ", ":=", " ", 
+        RowBox[{"{", "}"}]}], " ", ";", "\n", 
+       RowBox[{"For", "[", " ", 
+        RowBox[{
+         RowBox[{"i", " ", "=", " ", "1"}], " ", ",", " ", 
+         RowBox[{"i", " ", "<", " ", 
+          RowBox[{"Length", "[", " ", "localLayerCounts", " ", "]"}]}], " ", 
+         ",", " ", 
+         RowBox[{"i", "++"}], " ", ",", 
+         RowBox[{"(", "\n", 
+          RowBox[{
+           RowBox[{"end", " ", "=", " ", 
+            RowBox[{"start", " ", "+", " ", 
+             RowBox[{"localLayerCounts", "[", 
+              RowBox[{"[", " ", 
+               RowBox[{"i", "+", "1"}], "  ", "]"}], "]"}], " ", "-", " ", 
+             "1"}]}], " ", ";", "\n", 
+           RowBox[{"thislayerList", " ", ":=", " ", 
+            RowBox[{"nodeXYs", "[", 
+             RowBox[{"[", " ", 
+              RowBox[{"start", ";;", "end"}], " ", "]"}], "]"}]}], " ", ";", 
+           "\n", 
+           RowBox[{"AppendTo", "[", " ", 
+            RowBox[{"layerCenters", " ", ",", " ", 
+             RowBox[{"nodeXYs", "[", 
+              RowBox[{"[", " ", 
+               RowBox[{"start", ";;", "end"}], " ", "]"}], "]"}]}], "  ", 
+            "]"}], " ", ";", "\n", 
+           RowBox[{"AppendTo", "[", " ", 
+            RowBox[{"layerNodeRadii", " ", ",", " ", 
+             RowBox[{"nodeRadii", "[", 
+              RowBox[{"[", " ", 
+               RowBox[{"start", ";;", "end"}], " ", "]"}], "]"}]}], " ", 
+            "]"}], " ", ";", "\n", 
+           RowBox[{"start", " ", "=", " ", 
+            RowBox[{"start", " ", "+", " ", 
+             RowBox[{"localLayerCounts", "[", 
+              RowBox[{"[", " ", 
+               RowBox[{"i", "+", "1"}], "  ", "]"}], "]"}]}]}], " ", ";"}], 
+          "\n", ")"}]}], "\n", "]"}], " ", ";", "\n", "\n", 
+       RowBox[{"centerToCenterXYs", " ", "=", " ", 
+        RowBox[{"{", "}"}]}], " ", ";", "\n", 
+       RowBox[{"croppedInputXYs", " ", "=", " ", 
+        RowBox[{"{", "}"}]}], " ", ";", "\n", 
+       RowBox[{"croppedHiddenXYs", " ", "=", " ", 
+        RowBox[{"{", "}"}]}], " ", ";", "\n", 
+       RowBox[{"croppedOutputXYs", " ", "=", " ", 
+        RowBox[{"{", "}"}]}], " ", ";", "\n", 
+       RowBox[{"For", "[", " ", 
+        RowBox[{
+         RowBox[{"i", " ", "=", " ", "1"}], " ", ",", " ", 
+         RowBox[{"i", " ", "<=", " ", 
+          RowBox[{
+           RowBox[{"Length", "[", " ", "layerCenters", " ", "]"}], " ", "-", 
+           " ", "1"}]}], " ", ",", " ", 
+         RowBox[{"i", "++"}], " ", ",", " ", 
+         RowBox[{"(", "\n", 
+          RowBox[{
+           RowBox[{"sourceNodeList", " ", ":=", " ", 
+            RowBox[{"layerCenters", "[", 
+             RowBox[{"[", "i", "]"}], "]"}]}], " ", ";", "\n", 
+           RowBox[{"destinationNodeList", " ", ":=", " ", 
+            RowBox[{"layerCenters", "[", 
+             RowBox[{"[", 
+              RowBox[{"i", "+", "1"}], "]"}], "]"}]}], " ", ";", "\n", "\n", 
+           RowBox[{"For", "[", " ", 
+            RowBox[{
+             RowBox[{"j", " ", "=", " ", "1"}], " ", ",", " ", 
+             RowBox[{"j", " ", "<=", " ", 
+              RowBox[{"Length", "[", " ", "sourceNodeList", " ", "]"}]}], " ",
+              ",", " ", 
+             RowBox[{"j", "++"}], " ", ",", " ", 
+             RowBox[{"(", "\n", 
+              RowBox[{
+               RowBox[{"For", "[", " ", 
+                RowBox[{
+                 RowBox[{"k", "=", "1"}], " ", ",", " ", 
+                 RowBox[{"k", "<=", 
+                  RowBox[{"Length", "[", "destinationNodeList", "]"}]}], " ", 
+                 ",", " ", 
+                 RowBox[{"k", "++"}], " ", ",", " ", 
+                 RowBox[{"(", "\n", "\n", 
+                  RowBox[{
+                   RowBox[{"point1X", " ", ":=", " ", 
+                    RowBox[{"Part", "[", " ", 
+                    RowBox[{
+                    RowBox[{"sourceNodeList", "[", 
+                    RowBox[{"[", " ", "j", "]"}], "]"}], " ", ",", " ", "1"}],
+                     " ", "]"}]}], " ", ";", "\n", 
+                   RowBox[{"point1Y", " ", ":=", " ", 
+                    RowBox[{"Part", "[", " ", 
+                    RowBox[{
+                    RowBox[{"sourceNodeList", "[", 
+                    RowBox[{"[", " ", "j", "]"}], "]"}], " ", ",", " ", "2"}],
+                     " ", "]"}]}], " ", ";", "\n", 
+                   RowBox[{"point2X", " ", ":=", " ", 
+                    RowBox[{"Part", "[", " ", 
+                    RowBox[{
+                    RowBox[{"destinationNodeList", "[", 
+                    RowBox[{"[", "k", "]"}], "]"}], " ", ",", " ", "1"}], " ",
+                     "]"}]}], " ", ";", "\n", 
+                   RowBox[{"point2Y", " ", ":=", " ", 
+                    RowBox[{"Part", "[", " ", 
+                    RowBox[{
+                    RowBox[{"destinationNodeList", "[", 
+                    RowBox[{"[", "k", "]"}], "]"}], " ", ",", " ", "2"}], " ",
+                     "]"}]}], " ", ";", "\n", 
+                   RowBox[{"radius1", " ", ":=", " ", 
+                    RowBox[{"Part", "[", " ", 
+                    RowBox[{
+                    RowBox[{"layerNodeRadii", "[", 
+                    RowBox[{"[", "i", "]"}], "]"}], " ", ",", " ", "1"}], " ",
+                     "]"}]}], " ", ";", "\n", 
+                   RowBox[{"radius2", " ", ":=", " ", 
+                    RowBox[{"Part", "[", " ", 
+                    RowBox[{
+                    RowBox[{"layerNodeRadii", "[", 
+                    RowBox[{"[", "i", "]"}], "]"}], " ", ",", " ", "1"}], " ",
+                     "]"}]}], " ", ";", "\n", "\n", 
+                   RowBox[{"deltaY", " ", ":=", " ", 
+                    RowBox[{"point2Y", " ", "-", " ", "point1Y"}]}], " ", ";",
+                    "\n", 
+                   RowBox[{"deltaX", " ", ":=", " ", 
+                    RowBox[{"point2X", " ", "-", " ", "point1X"}]}], " ", ";",
+                    "\n", 
+                   RowBox[{"length", " ", ":=", " ", 
+                    RowBox[{"Sqrt", "[", " ", 
+                    RowBox[{
+                    RowBox[{"deltaX", " ", "*", " ", "deltaX"}], " ", "+", 
+                    " ", 
+                    RowBox[{"deltaY", " ", "*", " ", "deltaY"}]}], " ", 
+                    "]"}]}], " ", ";", "\n", 
+                   RowBox[{"r1L", " ", ":=", " ", 
+                    RowBox[{"radius1", " ", "/", " ", "length"}]}], " ", ";", 
+                   "\n", 
+                   RowBox[{"r2L", " ", ":=", " ", 
+                    RowBox[{"radius2", " ", "/", " ", "length"}]}], " ", ";", 
+                   "\n", "\n", 
+                   RowBox[{"point1Y", " ", "=", " ", 
+                    RowBox[{"SetPrecision", "[", " ", 
+                    RowBox[{
+                    RowBox[{"point1Y", " ", "+", " ", 
+                    RowBox[{"deltaY", " ", "*", " ", "r1L"}]}], ",", " ", 
+                    "4"}], " ", "]"}]}], " ", ";", "\n", 
+                   RowBox[{"point2Y", " ", "=", " ", 
+                    RowBox[{"SetPrecision", "[", " ", 
+                    RowBox[{
+                    RowBox[{"point2Y", " ", "-", " ", 
+                    RowBox[{"deltaY", " ", "*", " ", "r2L"}]}], ",", " ", 
+                    "4"}], "  ", "]"}]}], " ", ";", "\n", 
+                   RowBox[{"point1X", " ", "=", " ", 
+                    RowBox[{"SetPrecision", "[", "  ", 
+                    RowBox[{
+                    RowBox[{"point1X", " ", "+", " ", 
+                    RowBox[{"deltaX", " ", "*", " ", "r1L"}]}], ",", " ", 
+                    "4"}], "  ", "]"}]}], " ", ";", "\n", 
+                   RowBox[{"point2X", " ", "=", " ", 
+                    RowBox[{"SetPrecision", "[", " ", 
+                    RowBox[{
+                    RowBox[{"point2X", " ", "-", " ", 
+                    RowBox[{"deltaX", " ", "*", " ", "r2L"}]}], ",", " ", 
+                    "4"}], "  ", "]"}]}], " ", ";", "\n", 
+                   RowBox[{"thisCroppedXY", " ", ":=", " ", 
+                    RowBox[{"{", " ", 
+                    RowBox[{
+                    RowBox[{"{", " ", 
+                    RowBox[{"point1X", " ", ",", " ", "point1Y"}], " ", "}"}],
+                     " ", ",", " ", 
+                    RowBox[{"{", " ", 
+                    RowBox[{"point2X", " ", ",", " ", "point2Y"}], " ", 
+                    "}"}]}], " ", "}"}]}], " ", ";", "\n", "\n", 
+                   RowBox[{"If", "[", " ", 
+                    RowBox[{
+                    RowBox[{"i", "<", "2"}], " ", ",", " ", 
+                    RowBox[{"AppendTo", "[", " ", 
+                    RowBox[{
+                    "croppedInputXYs", " ", ",", " ", "thisCroppedXY"}], " ", 
+                    "]"}], " ", ","}], " ", "]"}], " ", ";", "\n", 
+                   RowBox[{"If", "[", " ", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"i", ">", "1"}], " ", "&&", " ", 
+                    RowBox[{"i", " ", "<", " ", 
+                    RowBox[{
+                    RowBox[{"Length", "[", "layerCenters", " ", "]"}], " ", 
+                    "-", " ", "2"}]}]}], " ", ",", " ", 
+                    RowBox[{"AppendTo", "[", " ", 
+                    RowBox[{
+                    "croppedHiddenXYs", " ", ",", " ", "thisCroppedXY"}], " ",
+                     "]"}], " ", ","}], " ", "]"}], " ", ";", "\n", 
+                   RowBox[{"If", "[", " ", 
+                    RowBox[{
+                    RowBox[{"i", ">=", " ", 
+                    RowBox[{
+                    RowBox[{"Length", "[", "layerCenters", " ", "]"}], " ", 
+                    "-", " ", "2"}]}], " ", ",", " ", 
+                    RowBox[{"AppendTo", "[", " ", 
+                    RowBox[{
+                    "croppedOutputXYs", " ", ",", " ", "thisCroppedXY"}], " ",
+                     "]"}], " ", ","}], " ", "]"}], " ", ";", "\n", 
+                   RowBox[{"AppendTo", "[", " ", 
+                    RowBox[{
+                    "centerToCenterXYs", " ", ",", " ", "thisCroppedXY"}], 
+                    " ", "]"}], " ", ";"}], "\n", ")"}]}], "\n", "]"}], " ", 
+               ";"}], "\n", ")"}]}], "\n", "]"}], " ", ";"}], "\n", ")"}]}], 
+        "\n", "]"}], " ", ";", "\n", 
+       RowBox[{"threeLinkTypes", " ", ":=", " ", 
+        RowBox[{"{", "}"}]}], " ", ";", "\n", 
+       RowBox[{"AppendTo", "[", " ", 
+        RowBox[{"threeLinkTypes", " ", ",", " ", "croppedInputXYs"}], " ", 
+        "]"}], " ", ";", "\n", 
+       RowBox[{"AppendTo", "[", " ", 
+        RowBox[{"threeLinkTypes", " ", ",", " ", "croppedHiddenXYs"}], " ", 
+        "]"}], " ", ";", "\n", 
+       RowBox[{"AppendTo", "[", " ", 
+        RowBox[{"threeLinkTypes", " ", ",", " ", "croppedOutputXYs"}], " ", 
+        "]"}], " ", ";", "\n", 
+       RowBox[{"Return", "[", "  ", "threeLinkTypes", "  ", "]"}], " ", ";"}],
+       "\n", ")"}]}], "Code"], 
+   StyleBox["\n", "Code"], 
+   StyleBox["\n", "Code"], 
+   StyleBox[
+    RowBox[{
+    "(*", "*****************************************************************************************)"}\
+], "Code"], 
+   StyleBox["\n", "Code"], 
+   StyleBox["\n", "Code"], 
+   StyleBox[
+    RowBox[{
+     RowBox[{
+      RowBox[{"showNeuralNetwork", "[", " ", "nodesPerLayerList_", "]"}], " ",
+       ":=", " ", 
+      RowBox[{"(", "\n", 
+       RowBox[{
+        RowBox[{"prunedLayerList", " ", "=", " ", 
+         RowBox[{"{", "}"}]}], " ", ";", "\n", 
+        RowBox[{"For", "[", " ", 
+         RowBox[{
+          RowBox[{"i", " ", "=", " ", "1"}], " ", ",", " ", 
+          RowBox[{"i", " ", "<=", " ", 
+           RowBox[{"Length", "[", " ", "nodesPerLayerList", " ", "]"}]}], " ",
+           ",", " ", 
+          RowBox[{"i", "++"}], " ", ",", " ", "\n", 
+          RowBox[{
+           RowBox[{"If", "[", " ", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"nodesPerLayerList", "[", 
+               RowBox[{"[", "i", "]"}], "]"}], " ", ">", " ", "0"}], " ", ",",
+              " ", 
+             RowBox[{"AppendTo", "[", " ", 
+              RowBox[{"prunedLayerList", " ", ",", " ", 
+               RowBox[{"nodesPerLayerList", "[", 
+                RowBox[{"[", "i", "]"}], "]"}]}], " ", "]"}], " ", ","}], " ",
+             "]"}], " ", ";"}]}], "\n", "]"}], " ", ";", "\n", "\n", 
+        RowBox[{"splitNodeCenterList", " ", ":=", " ", 
+         RowBox[{"positionNodes", "[", " ", "prunedLayerList", " ", "]"}]}], 
+        " ", ";", "\n", 
+        RowBox[{"inputLayerNodes", " ", ":=", " ", 
+         RowBox[{"Part", "[", " ", 
+          RowBox[{"splitNodeCenterList", " ", ",", " ", "1"}], " ", "]"}]}], 
+        " ", ";", "\n", 
+        RowBox[{"hiddenLayerNodes", " ", ":=", " ", 
+         RowBox[{"Part", "[", " ", 
+          RowBox[{"splitNodeCenterList", " ", ",", " ", "2"}], " ", "]"}]}], 
+        " ", ";", "\n", 
+        RowBox[{"outputLayerNodes", " ", ":=", " ", 
+         RowBox[{"Part", "[", " ", 
+          RowBox[{"splitNodeCenterList", " ", ",", " ", "3"}], " ", "]"}]}], 
+        " ", ";", "\n", "\n", 
+        RowBox[{"inputNodesFontSize", " ", "=", " ", 
+         RowBox[{"10.0", " ", "*", " ", "nodeRadius"}]}], " ", ";", "\n", 
+        RowBox[{"inputNodeLabels", " ", ":=", " ", 
+         RowBox[{"{", "}"}]}], " ", ";", "\n", 
+        RowBox[{"For", "[", " ", 
+         RowBox[{
+          RowBox[{"q", "=", "1"}], " ", ",", " ", 
+          RowBox[{"q", " ", "<=", " ", 
+           RowBox[{"Length", "[", "  ", "inputLayerNodes", " ", "]"}]}], ",", 
+          " ", 
+          RowBox[{"q", "++"}], " ", ",", "\n", 
+          RowBox[{
+           RowBox[{"thisNodeLayer", " ", "=", " ", 
+            RowBox[{"Part", "[", " ", 
+             RowBox[{
+              RowBox[{"inputLayerNodes", "[", 
+               RowBox[{"[", "q", "]"}], "]"}], " ", ",", " ", "1"}], " ", 
+             "]"}]}], " ", ";", "\n", 
+           RowBox[{"thisNodeLayerXY", " ", "=", " ", 
+            RowBox[{"{", " ", 
+             RowBox[{
+              RowBox[{"Part", "[", " ", 
+               RowBox[{"thisNodeLayer", " ", ",", " ", "1"}], "  ", "]"}], 
+              " ", ",", "  ", 
+              RowBox[{
+               RowBox[{"Part", "[", " ", 
+                RowBox[{"thisNodeLayer", " ", ",", " ", "2"}], "  ", "]"}], 
+               " ", "-", " ", 
+               RowBox[{"nodeRadius", " ", "/", " ", "7.0"}]}]}], " ", "}"}]}],
+            " ", ";", "\n", 
+           RowBox[{"AppendTo", "[", " ", 
+            RowBox[{"inputNodeLabels", " ", ",", " ", 
+             RowBox[{"{", " ", 
+              RowBox[{
+               RowBox[{
+               "\[OpenCurlyDoubleQuote]", "X", "\[CloseCurlyDoubleQuote]"}], 
+               " ", ",", " ", "thisNodeLayerXY"}], " ", "}"}]}], "  ", "]"}], 
+           " ", ";"}]}], "\n", "]"}], " ", ";", "\n", "\n", 
+        RowBox[{"hiddenNodesFontSize", " ", "=", " ", 
+         RowBox[{"10.0", " ", "*", " ", "nodeRadius"}]}], " ", ";", "\n", 
+        RowBox[{"hiddenNodeLabels", " ", ":=", " ", 
+         RowBox[{"{", "}"}]}], " ", ";", "\n", 
+        RowBox[{"For", "[", " ", 
+         RowBox[{
+          RowBox[{"r", "=", "1"}], " ", ",", " ", 
+          RowBox[{"r", " ", "<=", " ", 
+           RowBox[{"Length", "[", "  ", "hiddenLayerNodes", " ", "]"}]}], ",",
+           " ", 
+          RowBox[{"r", "++"}], " ", ",", "\n", 
+          RowBox[{
+           RowBox[{"thisNodeLayer", " ", "=", " ", 
+            RowBox[{"Part", "[", " ", 
+             RowBox[{
+              RowBox[{"hiddenLayerNodes", "[", 
+               RowBox[{"[", "r", "]"}], "]"}], " ", ",", " ", "1"}], " ", 
+             "]"}]}], " ", ";", "\n", 
+           RowBox[{"thisNodeLayerXY", " ", "=", " ", 
+            RowBox[{"{", " ", 
+             RowBox[{
+              RowBox[{"Part", "[", " ", 
+               RowBox[{"thisNodeLayer", " ", ",", " ", "1"}], "  ", "]"}], 
+              " ", ",", "  ", 
+              RowBox[{
+               RowBox[{"Part", "[", " ", 
+                RowBox[{"thisNodeLayer", " ", ",", " ", "2"}], "  ", "]"}], 
+               " ", "-", " ", 
+               RowBox[{"nodeRadius", " ", "/", " ", "7.0"}]}]}], " ", "}"}]}],
+            " ", ";", "\n", 
+           RowBox[{"AppendTo", "[", " ", 
+            RowBox[{"hiddenNodeLabels", " ", ",", " ", 
+             RowBox[{"{", " ", 
+              RowBox[{
+               RowBox[{
+               "\[OpenCurlyDoubleQuote]", "A", "\[CloseCurlyDoubleQuote]"}], 
+               " ", ",", " ", "thisNodeLayerXY"}], " ", "}"}]}], " ", 
+            "]"}]}]}], "\n", "]"}], ";", "\n", "\n", 
+        RowBox[{"outputNodesFontSize", " ", "=", " ", 
+         RowBox[{"10.0", " ", "*", " ", "nodeRadius"}]}], " ", ";", "\n", 
+        RowBox[{"outputNodeLabels", " ", ":=", " ", 
+         RowBox[{"{", "}"}]}], " ", ";", "\n", 
+        RowBox[{"For", "[", " ", 
+         RowBox[{
+          RowBox[{"s", "=", "1"}], " ", ",", " ", 
+          RowBox[{"s", " ", "<=", " ", 
+           RowBox[{"Length", "[", "  ", "outputLayerNodes", " ", "]"}]}], ",",
+           " ", 
+          RowBox[{"s", "++"}], " ", ",", "\n", 
+          RowBox[{
+           RowBox[{"thisNodeLayer", " ", "=", " ", 
+            RowBox[{"Part", "[", " ", 
+             RowBox[{
+              RowBox[{"outputLayerNodes", "[", 
+               RowBox[{"[", "s", "]"}], "]"}], " ", ",", " ", "1"}], " ", 
+             "]"}]}], " ", ";", "\n", 
+           RowBox[{"thisNodeLayerXY", " ", "=", " ", 
+            RowBox[{"{", " ", 
+             RowBox[{
+              RowBox[{"Part", "[", " ", 
+               RowBox[{"thisNodeLayer", " ", ",", " ", "1"}], "  ", "]"}], 
+              " ", ",", "  ", 
+              RowBox[{
+               RowBox[{"Part", "[", " ", 
+                RowBox[{"thisNodeLayer", " ", ",", " ", "2"}], "  ", "]"}], 
+               " ", "-", " ", 
+               RowBox[{"nodeRadius", " ", "/", " ", "7.0"}]}]}], " ", "}"}]}],
+            " ", ";", "\n", 
+           RowBox[{"If", "[", " ", 
+            RowBox[{
+             RowBox[{"s", "==", "1"}], " ", ",", "\n", 
+             RowBox[{"AppendTo", "[", " ", 
+              RowBox[{"outputNodeLabels", " ", ",", " ", 
+               RowBox[{"{", " ", 
+                RowBox[{
+                 RowBox[{
+                 "\[OpenCurlyDoubleQuote]", "A", "\[CloseCurlyDoubleQuote]"}],
+                  " ", ",", " ", "thisNodeLayerXY"}], " ", "}"}]}], " ", 
+              "]"}], " ", ",", "\n", 
+             RowBox[{"AppendTo", "[", " ", 
+              RowBox[{"outputNodeLabels", " ", ",", " ", 
+               RowBox[{"{", " ", 
+                RowBox[{
+                 RowBox[{
+                 "\[OpenCurlyDoubleQuote]", "Y", "\[CloseCurlyDoubleQuote]"}],
+                  " ", ",", " ", "thisNodeLayerXY"}], " ", "}"}]}], " ", 
+              "]"}]}], "\n", "]"}], " ", ";"}]}], "\n", "]"}], ";", "\n", 
+        RowBox[{"hatFontSize", " ", "=", " ", 
+         RowBox[{"18.0", " ", "*", " ", "nodeRadius"}]}], " ", ";", "\n", 
+        RowBox[{"thisNodeLayer", " ", "=", " ", 
+         RowBox[{"Part", "[", " ", 
+          RowBox[{
+           RowBox[{"outputLayerNodes", "[", 
+            RowBox[{"[", "2", "]"}], "]"}], " ", ",", " ", "1"}], " ", 
+          "]"}]}], " ", ";", "\n", 
+        RowBox[{"thisNodeLayerXY", " ", "=", " ", 
+         RowBox[{"{", " ", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Part", "[", " ", 
+             RowBox[{"thisNodeLayer", " ", ",", " ", "1"}], "  ", "]"}], " ", 
+            "+", " ", 
+            RowBox[{"nodeRadius", " ", "/", " ", "10.0"}]}], " ", ",", "  ", 
+           RowBox[{
+            RowBox[{"Part", "[", " ", 
+             RowBox[{"thisNodeLayer", " ", ",", " ", "2"}], "  ", "]"}], " ", 
+            "-", " ", 
+            RowBox[{"nodeRadius", " ", "/", " ", "4.4"}]}]}], " ", "}"}]}], 
+        " ", ";", "\n", 
+        RowBox[{"hatLabel", " ", "=", " ", 
+         RowBox[{"{", " ", 
+          RowBox[{"{", " ", 
+           RowBox[{
+            RowBox[{
+            "\[OpenCurlyDoubleQuote]", "\:02c6", "\[CloseCurlyDoubleQuote]"}],
+             " ", ",", " ", "thisNodeLayerXY"}], " ", "}"}], " ", "}"}]}], 
+        " ", ";", "\n", "\n", 
+        RowBox[{"nodeCenterList", " ", ":=", " ", 
+         RowBox[{"Join", "[", " ", 
+          RowBox[{
+          "inputLayerNodes", " ", ",", " ", "hiddenLayerNodes", " ", ",", " ",
+            "outputLayerNodes"}], " ", "]"}]}], " ", ";", "\n", 
+        RowBox[{"tripleNetworkLinks", " ", ":=", " ", 
+         RowBox[{"positionAllLinks", "[", 
+          RowBox[{"prunedLayerList", " ", ",", " ", "nodeCenterList"}], 
+          "]"}]}], " ", ";", "\n", 
+        RowBox[{"inputLayerLinks", " ", ":=", " ", 
+         RowBox[{"Part", "[", " ", 
+          RowBox[{"tripleNetworkLinks", " ", ",", " ", "1"}], " ", "]"}]}], 
+        " ", ";", "\n", 
+        RowBox[{"hiddenLayerLinks", " ", ":=", " ", 
+         RowBox[{"Part", "[", " ", 
+          RowBox[{"tripleNetworkLinks", " ", ",", " ", "2"}], " ", "]"}]}], 
+        " ", ";", "\n", 
+        RowBox[{"outputLayerLinks", " ", ":=", " ", 
+         RowBox[{"Part", "[", " ", 
+          RowBox[{"tripleNetworkLinks", " ", ",", " ", "3"}], " ", "]"}]}], 
+        " ", ";", "\n", "\n", 
+        RowBox[{"Graphics", "[", 
+         RowBox[{
+          RowBox[{"{", " ", 
+           RowBox[{"Thick", " ", ",", " ", 
+            RowBox[{"Arrowheads", "[", "Medium", "]"}], " ", ",", "\n", 
+            "Magenta", " ", ",", " ", 
+            RowBox[{"Arrow", " ", "/@", " ", "inputLayerLinks"}], " ", ",", 
+            " ", "\n", "Gray", " ", ",", " ", 
+            RowBox[{"Arrow", " ", "/@", " ", "hiddenLayerLinks"}], " ", ",", 
+            " ", "\n", "Blue", " ", ",", " ", 
+            RowBox[{"Arrow", " ", "/@", " ", "outputLayerLinks"}], "  ", ",", 
+            " ", "\n", "\n", 
+            RowBox[{"EdgeForm", "[", 
+             RowBox[{"{", 
+              RowBox[{"Magenta", ",", " ", "Thick"}], "}"}], "]"}], ",", " ", 
+            RowBox[{"FaceForm", "[", "LightMagenta", "]"}], ",", " ", 
+            RowBox[{"Disk", " ", "@@@", " ", "inputLayerNodes"}], " ", ",", 
+            " ", "\n", 
+            RowBox[{"EdgeForm", "[", 
+             RowBox[{"{", 
+              RowBox[{"Gray", ",", " ", "Thick"}], "}"}], "]"}], ",", " ", 
+            RowBox[{"FaceForm", "[", "LightGray", "]"}], ",", 
+            RowBox[{"Disk", " ", "@@@", " ", "hiddenLayerNodes"}], " ", ",", 
+            " ", "\n", 
+            RowBox[{"EdgeForm", "[", 
+             RowBox[{"{", 
+              RowBox[{"Blue", ",", " ", "Thick"}], "}"}], "]"}], ",", ",", 
+            " ", 
+            RowBox[{"FaceForm", "[", "LightBlue", "]"}], " ", ",", " ", 
+            RowBox[{"Disk", " ", "@@@", " ", "outputLayerNodes"}], "  ", ",", 
+            " ", "\n", "\n", "Magenta", " ", ",", 
+            RowBox[{"FontSize", "->", " ", "inputNodesFontSize"}], " ", ",", 
+            " ", 
+            RowBox[{"Text", " ", "@@@", " ", "inputNodeLabels"}], " ", ",", 
+            "\n", "Black", " ", ",", 
+            RowBox[{"FontSize", "->", " ", "hiddenNodesFontSize"}], " ", ",", 
+            " ", 
+            RowBox[{"Text", " ", "@@@", " ", "hiddenNodeLabels"}], " ", ",", 
+            "\n", "Blue", " ", ",", 
+            RowBox[{"FontSize", "->", " ", "outputNodesFontSize"}], " ", ",", 
+            " ", 
+            RowBox[{"Text", " ", "@@@", " ", "outputNodeLabels"}], " ", ",", 
+            "\n", "Blue", " ", ",", 
+            RowBox[{"FontSize", "->", " ", "hatFontSize"}], " ", ",", " ", 
+            RowBox[{"Text", " ", "@@@", " ", "hatLabel"}]}], "\n", "\n", 
+           "}"}], ",", " ", "\n", 
+          RowBox[{"ImageSize", "->", "Full"}]}], "]"}]}], "\n", "\n", ")"}]}],
+      " ", ";"}], "Code"], 
+   StyleBox["\n", "Code"], 
+   StyleBox["\n", "Code"], 
+   StyleBox[
+    RowBox[{
+     RowBox[{"showNeuralNetwork", "[", " ", 
+      RowBox[{"{", " ", 
+       RowBox[{
+       "2", " ", ",", " ", "4", "  ", ",", " ", "3", " ", ",", "  ", "4", " ",
+         ",", " ", "1", " ", ",", " ", "1"}], "   ", "}"}], " ", "]"}], " ", 
+     ";"}], "Code"], 
+   StyleBox["\[LineSeparator]", "Code"], 
+   StyleBox["\[LineSeparator]", "Code"]}]}]], "Code",
  CellChangeTimes->{{3.7007765492418337`*^9, 3.7007765636102467`*^9}, {
    3.705104213701561*^9, 3.7051042224510612`*^9}, {3.7051697227932177`*^9, 
    3.7051697367862177`*^9}, {3.7056847753333597`*^9, 3.7056847788413363`*^9}, 
    3.705685608918363*^9, 3.716902605618763*^9, {3.7391769852765355`*^9, 
    3.739177041757678*^9}, 3.7391776130597486`*^9, 3.7391777519434066`*^9, 
-   3.7391783623061156`*^9},ExpressionUUID->"5a1cd55e-08dd-427e-b46e-\
-afc4b12127d9"],
+   3.7391783623061156`*^9, {3.73920746212243*^9, 3.7392074718492355`*^9}, {
+   3.7392077268085823`*^9, 3.7392077268200054`*^9}, {3.739207917562105*^9, 
+   3.7392079209192886`*^9}, 3.739207962415561*^9, {3.7392081252813177`*^9, 
+   3.739208126390658*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"5a1cd55e-08dd-427e-b46e-afc4b12127d9"],
 
 Cell["", "Text",
  CellChangeTimes->{{3.7007765492418337`*^9, 3.7007765636102467`*^9}, {
@@ -652,8 +1481,8 @@ Cell["Code", "Subsection",
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{923, 817},
-WindowMargins->{{Automatic, 137}, {Automatic, 13}},
+WindowSize->{1368, 829},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 7, 2018)",
 StyleDefinitions->Notebook[{
    Cell[
@@ -948,58 +1777,62 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 347, 8, 198, "Title",ExpressionUUID->"755e0098-9782-4df5-8299-7f54266c54d6"],
-Cell[930, 32, 593, 11, 67, "Abstract",ExpressionUUID->"db4efd27-b72d-4835-a486-b18956bba0cb"],
+Cell[930, 32, 593, 11, 46, "Abstract",ExpressionUUID->"db4efd27-b72d-4835-a486-b18956bba0cb"],
 Cell[1526, 45, 710, 11, 44, "AuthorInfo",ExpressionUUID->"59a63784-4e95-46b9-9a1d-2c013f47161b"],
 Cell[2239, 58, 71, 0, 33, "Text",ExpressionUUID->"85271f44-5b04-421c-bf31-0395fab10c35"],
-Cell[2313, 60, 1142, 18, 99, "Text",ExpressionUUID->"99ddfba3-f2e4-48aa-a886-7472bbc581ac"],
+Cell[2313, 60, 1142, 18, 77, "Text",ExpressionUUID->"99ddfba3-f2e4-48aa-a886-7472bbc581ac"],
 Cell[CellGroupData[{
 Cell[3480, 82, 562, 9, 71, "Section",ExpressionUUID->"35feb7e4-4e93-4e64-abc0-7b0b86e8128f"],
-Cell[4045, 93, 1038, 16, 99, "Text",ExpressionUUID->"dc3fa30d-000e-45b8-9f6e-f2ffca697a75"],
-Cell[5086, 111, 785, 13, 55, "Text",ExpressionUUID->"8203915f-bb57-4b4c-bc81-5c310a33d338"],
-Cell[5874, 126, 710, 12, 55, "Text",ExpressionUUID->"1e6311c8-a678-4be7-b8df-999d75377b2f"],
+Cell[4045, 93, 1038, 16, 77, "Text",ExpressionUUID->"dc3fa30d-000e-45b8-9f6e-f2ffca697a75"],
+Cell[5086, 111, 785, 13, 33, "Text",ExpressionUUID->"8203915f-bb57-4b4c-bc81-5c310a33d338"],
+Cell[5874, 126, 710, 12, 33, "Text",ExpressionUUID->"1e6311c8-a678-4be7-b8df-999d75377b2f"],
 Cell[6587, 140, 445, 7, 30, "CodeText",ExpressionUUID->"6047e34c-4783-4ed0-b0de-5328517365be"],
-Cell[7035, 149, 463, 10, 26, "Input",ExpressionUUID->"6a57f104-ade9-4e69-9c46-f4f2c59d53ab"]
+Cell[CellGroupData[{
+Cell[7057, 151, 480, 9, 50, "Code",ExpressionUUID->"6a57f104-ade9-4e69-9c46-f4f2c59d53ab"],
+Cell[7540, 162, 153, 2, 30, "Output",ExpressionUUID->"90b10720-4b04-4e41-a34a-52593764c3be"]
+}, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7535, 164, 513, 12, 71, "Section",ExpressionUUID->"69c2789e-757d-42de-8e7a-aa67a7c35b9d"],
-Cell[8051, 178, 388, 7, 33, "Text",ExpressionUUID->"7de5c4c6-a64b-46a1-a690-20421acf8327"],
-Cell[8442, 187, 519, 9, 33, "Text",ExpressionUUID->"0ed2d935-e8ff-4c05-9e95-1dd6631482fc"],
-Cell[8964, 198, 839, 14, 77, "Text",ExpressionUUID->"9466d7a5-6c91-476e-b187-d01e2a7a0b79"],
-Cell[9806, 214, 299, 5, 30, "CodeText",ExpressionUUID->"7a9ac988-03a4-4c18-9dca-ea7cdc6e168b"],
-Cell[10108, 221, 2259, 49, 84, "Input",ExpressionUUID->"e3998e4d-7b72-4f12-ab60-8520725af581"]
+Cell[7742, 170, 513, 12, 71, "Section",ExpressionUUID->"69c2789e-757d-42de-8e7a-aa67a7c35b9d"],
+Cell[8258, 184, 388, 7, 33, "Text",ExpressionUUID->"7de5c4c6-a64b-46a1-a690-20421acf8327"],
+Cell[8649, 193, 519, 9, 33, "Text",ExpressionUUID->"0ed2d935-e8ff-4c05-9e95-1dd6631482fc"],
+Cell[9171, 204, 839, 14, 55, "Text",ExpressionUUID->"9466d7a5-6c91-476e-b187-d01e2a7a0b79"],
+Cell[10013, 220, 299, 5, 30, "CodeText",ExpressionUUID->"7a9ac988-03a4-4c18-9dca-ea7cdc6e168b"],
+Cell[10315, 227, 2306, 49, 105, "Code",ExpressionUUID->"e3998e4d-7b72-4f12-ab60-8520725af581"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12404, 275, 452, 7, 71, "Section",ExpressionUUID->"363992ed-65d6-4a46-9388-9c42d41918e4"],
-Cell[12859, 284, 615, 11, 99, "Text",ExpressionUUID->"72b00745-65c9-40a3-989b-179e50d3deb4"],
-Cell[13477, 297, 668, 10, 77, "Text",ExpressionUUID->"b67135a8-6669-431e-8529-378eb17fb7b0"],
-Cell[14148, 309, 491, 9, 55, "Text",ExpressionUUID->"33b6d64b-88aa-45a4-bd15-8aca8145099b"],
-Cell[14642, 320, 241, 4, 33, "Text",ExpressionUUID->"43b908e6-cc1d-4934-89c1-749cc3a3c7ad"],
-Cell[14886, 326, 334, 5, 50, "Text",ExpressionUUID->"07a294c8-d560-41d7-aec1-7445f654a5af"],
-Cell[15223, 333, 676, 15, 55, "Text",ExpressionUUID->"fbbaab04-6e80-4340-8229-327c630266ad"],
-Cell[15902, 350, 1284, 20, 121, "Text",ExpressionUUID->"84ed1ac4-b886-438d-bbe9-e6260caef6da"],
-Cell[17189, 372, 588, 10, 33, "Text",ExpressionUUID->"e209cfc4-2993-4e39-9aa4-6ca59e1bea0b"],
-Cell[17780, 384, 650, 11, 99, "Text",ExpressionUUID->"9de566ac-9609-419e-a8ab-db3eb3c2ae34"],
-Cell[18433, 397, 510, 8, 33, "Text",ExpressionUUID->"154e74e9-8e12-41eb-a878-9c080b0b499a"],
-Cell[18946, 407, 597, 10, 33, "Text",ExpressionUUID->"e52b5750-0b53-4a95-9793-5291240d9f30"],
-Cell[19546, 419, 379, 6, 46, "Input",ExpressionUUID->"00c65ba7-cd45-4902-81f0-f6d39fef26c4"]
+Cell[12658, 281, 452, 7, 71, "Section",ExpressionUUID->"363992ed-65d6-4a46-9388-9c42d41918e4"],
+Cell[13113, 290, 615, 11, 77, "Text",ExpressionUUID->"72b00745-65c9-40a3-989b-179e50d3deb4"],
+Cell[13731, 303, 1067, 19, 50, "Code",ExpressionUUID->"b67135a8-6669-431e-8529-378eb17fb7b0"],
+Cell[14801, 324, 491, 9, 33, "Text",ExpressionUUID->"33b6d64b-88aa-45a4-bd15-8aca8145099b"],
+Cell[15295, 335, 241, 4, 33, "Text",ExpressionUUID->"43b908e6-cc1d-4934-89c1-749cc3a3c7ad"],
+Cell[15539, 341, 334, 5, 50, "Text",ExpressionUUID->"07a294c8-d560-41d7-aec1-7445f654a5af"],
+Cell[15876, 348, 676, 15, 33, "Text",ExpressionUUID->"fbbaab04-6e80-4340-8229-327c630266ad"],
+Cell[16555, 365, 1284, 20, 99, "Text",ExpressionUUID->"84ed1ac4-b886-438d-bbe9-e6260caef6da"],
+Cell[17842, 387, 588, 10, 33, "Text",ExpressionUUID->"e209cfc4-2993-4e39-9aa4-6ca59e1bea0b"],
+Cell[18433, 399, 311, 7, 50, "Code",ExpressionUUID->"fef3c70b-6f9d-4d1b-9501-cf048e9bcc87"],
+Cell[18747, 408, 688, 12, 33, "Text",ExpressionUUID->"9de566ac-9609-419e-a8ab-db3eb3c2ae34"],
+Cell[19438, 422, 792, 15, 50, "Code",ExpressionUUID->"154e74e9-8e12-41eb-a878-9c080b0b499a"],
+Cell[20233, 439, 597, 10, 33, "Text",ExpressionUUID->"e52b5750-0b53-4a95-9793-5291240d9f30"],
+Cell[20833, 451, 379, 6, 46, "Input",ExpressionUUID->"00c65ba7-cd45-4902-81f0-f6d39fef26c4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[19962, 430, 301, 5, 71, "Section",ExpressionUUID->"9da19663-7179-45c9-8160-ad35832309c2"],
-Cell[20266, 437, 542, 9, 33, "Text",ExpressionUUID->"45c45f6e-321c-4ce7-9657-950c1134d308"],
-Cell[20811, 448, 1189, 18, 121, "Text",ExpressionUUID->"668410b2-1189-4abe-827e-a4e728c41c45"],
-Cell[22003, 468, 9054, 126, 4411, "Text",ExpressionUUID->"5a1cd55e-08dd-427e-b46e-afc4b12127d9"],
-Cell[31060, 596, 373, 6, 33, "Text",ExpressionUUID->"974d1d02-3f81-4f9f-a141-4f1608fd9d6a"]
+Cell[21249, 462, 301, 5, 71, "Section",ExpressionUUID->"9da19663-7179-45c9-8160-ad35832309c2"],
+Cell[21553, 469, 542, 9, 33, "Text",ExpressionUUID->"45c45f6e-321c-4ce7-9657-950c1134d308"],
+Cell[22098, 480, 1189, 18, 99, "Text",ExpressionUUID->"668410b2-1189-4abe-827e-a4e728c41c45"],
+Cell[23290, 500, 41656, 923, 3777, "Code",ExpressionUUID->"5a1cd55e-08dd-427e-b46e-afc4b12127d9"],
+Cell[64949, 1425, 373, 6, 33, "Text",ExpressionUUID->"974d1d02-3f81-4f9f-a141-4f1608fd9d6a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[31470, 607, 171, 3, 71, "Section",ExpressionUUID->"a78f6e4f-dbdf-4763-a44f-16569b36e665"],
-Cell[31644, 612, 217, 4, 33, "Text",ExpressionUUID->"a4e585e2-fad1-40ff-85de-7b4c754eae54"],
-Cell[31864, 618, 195, 4, 33, "Text",ExpressionUUID->"1310d939-305b-4c51-b5aa-b18961db33c5"]
+Cell[65359, 1436, 171, 3, 71, "Section",ExpressionUUID->"a78f6e4f-dbdf-4763-a44f-16569b36e665"],
+Cell[65533, 1441, 217, 4, 33, "Text",ExpressionUUID->"a4e585e2-fad1-40ff-85de-7b4c754eae54"],
+Cell[65753, 1447, 195, 4, 33, "Text",ExpressionUUID->"1310d939-305b-4c51-b5aa-b18961db33c5"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[32096, 627, 306, 6, 170, "Chapter",ExpressionUUID->"a91b0c22-4606-4122-bf19-3d4bcd746f4c"],
-Cell[32405, 635, 155, 3, 47, "Subsection",ExpressionUUID->"962879f3-9b11-4b56-8992-fa4001376df9"],
-Cell[32563, 640, 204, 4, 39, "Subsection",ExpressionUUID->"f46ef323-e1f9-43b8-b626-fa17b9c9a91b"],
-Cell[32770, 646, 202, 4, 39, "Subsection",ExpressionUUID->"f9a42e24-3257-4b35-8468-5b9b14030d1c"]
+Cell[65985, 1456, 306, 6, 170, "Chapter",ExpressionUUID->"a91b0c22-4606-4122-bf19-3d4bcd746f4c"],
+Cell[66294, 1464, 155, 3, 47, "Subsection",ExpressionUUID->"962879f3-9b11-4b56-8992-fa4001376df9"],
+Cell[66452, 1469, 204, 4, 39, "Subsection",ExpressionUUID->"f46ef323-e1f9-43b8-b626-fa17b9c9a91b"],
+Cell[66659, 1475, 202, 4, 39, "Subsection",ExpressionUUID->"f9a42e24-3257-4b35-8468-5b9b14030d1c"]
 }, Open  ]]
 }, Open  ]]
 }
