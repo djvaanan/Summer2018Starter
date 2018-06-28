@@ -1,0 +1,1008 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     50486,       1000]
+NotebookOptionsPosition[     33000,        654]
+NotebookOutlinePosition[     46426,        947]
+CellTagsIndexPosition[     46383,        944]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+The Man Who Wanted a Wolfram Language. 
+In 1916.\
+\>", "Title",
+ CellChangeTimes->{{3.700774153171832*^9, 3.700774159196458*^9}, {
+  3.716902403353675*^9, 3.716902404538095*^9}, {3.7391695040009317`*^9, 
+  3.739169526119136*^9}, {3.739177786210881*^9, 
+  3.7391777943117895`*^9}},ExpressionUUID->"755e0098-9782-4df5-8299-\
+7f54266c54d6"],
+
+Cell["\<\
+A century ago, a brilliant but unknown Englishman saw the need for a language \
+that started with data and hence could express a world that happens from the \
+bottom up.\
+\>", "Abstract",
+ CellChangeTimes->{{3.700774172671139*^9, 3.700774220850109*^9}, {
+   3.700778895632181*^9, 3.700778896308676*^9}, {3.716902409622859*^9, 
+   3.7169024154226503`*^9}, 3.7354828213821573`*^9, {3.73548464781948*^9, 
+   3.735484648712131*^9}, {3.735587270504136*^9, 3.735587272381384*^9}, {
+   3.73916953725443*^9, 
+   3.73916965478207*^9}},ExpressionUUID->"db4efd27-b72d-4835-a486-\
+b18956bba0cb"],
+
+Cell["James Bailey, Jun. 28,  2018\[AliasDelimiter]\[AliasDelimiter]", \
+"AuthorInfo",
+ CellChangeTimes->{{3.7360942820567207`*^9, 3.736094285334813*^9}, {
+  3.736098860672957*^9, 3.7360988944763517`*^9}, {3.7360990983398457`*^9, 
+  3.736099107824772*^9}, {3.736099251923992*^9, 3.7360993016054573`*^9}, {
+  3.7368685297868023`*^9, 3.736868530751481*^9}, {3.736868726576907*^9, 
+  3.7368687285334053`*^9}, {3.7368690514137907`*^9, 3.736869059546919*^9}, {
+  3.736869099634509*^9, 3.73686915397053*^9}, {3.739169873848776*^9, 
+  3.7391698798193517`*^9}, {3.739170433963296*^9, 3.739170436757059*^9}, {
+  3.739187120697707*^9, 
+  3.7391871213115983`*^9}},ExpressionUUID->"59a63784-4e95-46b9-9a1d-\
+2c013f47161b"],
+
+Cell["", "Text",ExpressionUUID->"85271f44-5b04-421c-bf31-0395fab10c35"],
+
+Cell["\<\
+Subjects like computer programming and emergent behavior are often thought to \
+be the province of scientists. Emergent behavior, however, happens in the \
+parts of reality that are alive,  not the parts that are \
+\[AliasDelimiter]dead. So it is interesting to study a humanist who saw these \
+phenomena a century ago and how he struggled to express what he saw. The \
+common thread of these early thinkers is that they started their thinking \
+with data and wanted a language that did likewise.\
+\>", "Text",
+ CellChangeTimes->{{3.700774312865305*^9, 3.700774350341485*^9}, 
+   3.716902427754265*^9, 3.7354828504054613`*^9, {3.735483653472313*^9, 
+   3.735483683917967*^9}, {3.7354849519274273`*^9, 3.735484958639419*^9}, {
+   3.7355873998710403`*^9, 3.73558761257386*^9}, {3.736099062603284*^9, 
+   3.736099062938388*^9}, 3.738588402126446*^9, {3.738588473865753*^9, 
+   3.738588479696198*^9}, {3.738588515044569*^9, 3.738588515882841*^9}, {
+   3.7391696847128105`*^9, 3.739169942132117*^9}, 3.7391704212468786`*^9, {
+   3.739177829491843*^9, 
+   3.7391778667976823`*^9}},ExpressionUUID->"99ddfba3-f2e4-48aa-a886-\
+7472bbc581ac"],
+
+Cell[CellGroupData[{
+
+Cell["\[OpenCurlyDoubleQuote]It Calls For a New Art, Yet To Be Invented\
+\[CloseCurlyDoubleQuote] ", "Section",
+ CellChangeTimes->{
+  3.716825484342502*^9, {3.7354837120026693`*^9, 3.735483720370885*^9}, {
+   3.7354849131442633`*^9, 3.735484915566925*^9}, {3.735484977664678*^9, 
+   3.73548497936073*^9}, {3.735486235411076*^9, 3.735486260084824*^9}, {
+   3.735587708401764*^9, 3.735587719552019*^9}, {3.736094321292815*^9, 
+   3.736094380388455*^9}, {3.7391699546633844`*^9, 
+   3.7391699699828544`*^9}},ExpressionUUID->"35feb7e4-4e93-4e64-abc0-\
+7b0b86e8128f"],
+
+Cell["\<\
+When George Sturt, the Gregor Mendel of computational thinking, was \
+attempting to communicate his insights back in the early 20th century, he \
+recognized that realities like emergent behavior could not be expressed in \
+words. He looked at the behavior of individual family members, then at the \
+collective behavior of the family as a whole. The family behavior was \
+different in ways that could not be expressed as the sum of the individual \
+behaviors. He yearned for a language that could express what he saw:\
+\>", "Text",
+ CellChangeTimes->{{3.7354837220663652`*^9, 3.735483751473709*^9}, {
+   3.735486262485011*^9, 3.735486288116446*^9}, {3.735486386471116*^9, 
+   3.735486438104398*^9}, {3.735486495412992*^9, 3.7354864964790583`*^9}, {
+   3.735587802145555*^9, 3.735587813514737*^9}, {3.7360943822773247`*^9, 
+   3.736094388427802*^9}, 3.736868570517212*^9, {3.739170033094287*^9, 
+   3.7391701533963556`*^9}, 3.739177894104679*^9, 
+   3.739178430472265*^9},ExpressionUUID->"dc3fa30d-000e-45b8-9f6e-\
+f2ffca697a75"],
+
+Cell["\<\
+\[OpenCurlyDoubleQuote]The [individual] organism doing its work, \
+instinctively and well: and so the family, another organism, doing equally \
+well \[Ellipsis] it does call for a new art, yet to be invented for recording \
+such things.\[CloseCurlyDoubleQuote]\
+\>", "Text",
+ CellChangeTimes->{{3.7354837220663652`*^9, 3.735483751473709*^9}, {
+   3.735486262485011*^9, 3.735486288116446*^9}, {3.735486386471116*^9, 
+   3.735486438104398*^9}, {3.735486495412992*^9, 3.7354864964790583`*^9}, {
+   3.735587802145555*^9, 3.735587813514737*^9}, {3.7360943822773247`*^9, 
+   3.736094388427802*^9}, 3.736868570517212*^9, {3.739170033094287*^9, 
+   3.739170177180006*^9}, {3.7391702170100627`*^9, 
+   3.7391702170110865`*^9}},ExpressionUUID->"8203915f-bb57-4b4c-bc81-\
+5c310a33d338"],
+
+Cell["\<\
+Well, that new art is being invented, although it cannot be summarized in any \
+single line of code. So here, dear reader, just imagine a call to the whole \
+neural network environment.\
+\>", "Text",
+ CellChangeTimes->{{3.7354837220663652`*^9, 3.735483751473709*^9}, {
+   3.735486262485011*^9, 3.735486288116446*^9}, {3.735486386471116*^9, 
+   3.735486438104398*^9}, {3.735486495412992*^9, 3.7354864964790583`*^9}, {
+   3.735587802145555*^9, 3.735587813514737*^9}, {3.7360943822773247`*^9, 
+   3.736094388427802*^9}, 3.736868570517212*^9, {3.739170033094287*^9, 
+   3.739170177180006*^9}, {3.7391702186498814`*^9, 
+   3.7391702796418147`*^9}},ExpressionUUID->"1e6311c8-a678-4be7-b8df-\
+999d75377b2f"],
+
+Cell["", "CodeText",
+ CellChangeTimes->{{3.7354837283947477`*^9, 3.735483762505471*^9}, 
+   3.7354839554661007`*^9, {3.735486453399912*^9, 3.7354864557440453`*^9}, {
+   3.735486518874126*^9, 3.735486528166209*^9}, {3.735587823291749*^9, 
+   3.735587914389967*^9}, {3.735588066119091*^9, 3.735588068495346*^9}, 
+   3.736092052574951*^9, {3.739170194329348*^9, 
+   3.7391701968089166`*^9}},ExpressionUUID->"6047e34c-4783-4ed0-b0de-\
+5328517365be"],
+
+Cell[BoxData[
+ RowBox[{"Code", " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "call", " ", "into", " ", "the", " ", "neural", " ", "network", " ", 
+    "environment"}], " ", "*)"}]}]], "Input",
+ CellChangeTimes->{{3.735483764882769*^9, 3.735483804136156*^9}, {
+  3.735486531590019*^9, 3.735486538965722*^9}, {3.735486839352989*^9, 
+  3.735486841416996*^9}, {3.7391702860030575`*^9, 
+  3.7391702992220383`*^9}},ExpressionUUID->"6a57f104-ade9-4e69-9c46-\
+f4f2c59d53ab"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "The New Art Starts With Data. ",
+ StyleBox["Detailed",
+  FontVariations->{"Underline"->True}],
+ " Data."
+}], "Section",
+ CellChangeTimes->{
+  3.716825484342502*^9, {3.735483919282419*^9, 3.735483930584803*^9}, {
+   3.735486467547221*^9, 3.7354864678234043`*^9}, {3.7355877724233932`*^9, 
+   3.73558779245604*^9}, {3.73609433900439*^9, 3.736094368339192*^9}, 
+   3.7360944021880836`*^9, {3.7391703184223814`*^9, 
+   3.739170336274059*^9}},ExpressionUUID->"69c2789e-757d-42de-8e7a-\
+aa67a7c35b9d"],
+
+Cell[TextData[StyleBox["",
+ FontColor->GrayLevel[0.5]]], "Text",
+ CellChangeTimes->{{3.735483932944489*^9, 3.7354839472643557`*^9}, 
+   3.735486472511282*^9, {3.735587929314433*^9, 3.735588040172488*^9}, {
+   3.7360944038458967`*^9, 3.736094409443921*^9}, 3.73686857240979*^9, {
+   3.739171098926095*^9, 
+   3.739171109527234*^9}},ExpressionUUID->"7de5c4c6-a64b-46a1-a690-\
+20421acf8327"],
+
+Cell["\<\
+We know that George gathered and recorded exactly the kinds of detailed data \
+that now come for free in the online world:\
+\>", "Text",
+ CellChangeTimes->{{3.735483932944489*^9, 3.7354839472643557`*^9}, 
+   3.735486472511282*^9, {3.735587929314433*^9, 3.735588040172488*^9}, {
+   3.7360944038458967`*^9, 3.736094409443921*^9}, 3.736868574101507*^9, {
+   3.739170403614992*^9, 3.7391704052498264`*^9}, {3.739170748313063*^9, 
+   3.739170759545905*^9}},ExpressionUUID->"0ed2d935-e8ff-4c05-9e95-\
+1dd6631482fc"],
+
+Cell["\<\
+\[OpenCurlyDoubleQuote]I was counting up last night the elemental tragedy \
+stuff that has occurred in the cottages within 100 yards from here, since I \
+came here seven years ago: 4 deaths of old men, 2 deaths of young men leaving \
+families, 1 death of a mother, 1 death of an infant, 1 case of sunstroke, \
+with delirium, 1 case of hemorrhage with fits, and 1 girl home 'in trouble.'\
+\[CloseCurlyDoubleQuote]\
+\>", "Text",
+ CellChangeTimes->{{3.735483932944489*^9, 3.7354839472643557`*^9}, 
+   3.735486472511282*^9, {3.735587929314433*^9, 3.735588040172488*^9}, {
+   3.7360944038458967`*^9, 3.736094409443921*^9}, 3.736868574101507*^9, {
+   3.739170403614992*^9, 3.7391704052498264`*^9}, {3.739170748313063*^9, 
+   3.7391707668271866`*^9}, 
+   3.7391708424915905`*^9},ExpressionUUID->"9466d7a5-6c91-476e-b187-\
+d01e2a7a0b79"],
+
+Cell["", "CodeText",
+ CellChangeTimes->{{3.7354837283947477`*^9, 3.735483762505471*^9}, 
+   3.7354839554661007`*^9, {3.735588048797143*^9, 3.735588078242901*^9}, 
+   3.736092055787822*^9, {3.7391708331692486`*^9, 
+   3.7391708385379815`*^9}},ExpressionUUID->"7a9ac988-03a4-4c18-9dca-\
+ea7cdc6e168b"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{"(*", " ", 
+    RowBox[{"we", " ", "start", " ", "with", " ", "the", " ", "data"}], " ", 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"neighborEventsList", ":=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\[OpenCurlyDoubleQuote]", 
+       RowBox[{"death", " ", "of", " ", "old", " ", "man"}], 
+       "\[CloseCurlyDoubleQuote]"}], ",", 
+      RowBox[{"\[OpenCurlyDoubleQuote]", 
+       RowBox[{"death", " ", "of", " ", "old", " ", "man"}], 
+       "\[CloseCurlyDoubleQuote]"}], ",", 
+      RowBox[{"\[OpenCurlyDoubleQuote]", 
+       RowBox[{"death", " ", "of", " ", "old", " ", "man"}], 
+       "\[CloseCurlyDoubleQuote]"}], ",", 
+      RowBox[{"\[OpenCurlyDoubleQuote]", 
+       RowBox[{"death", " ", "of", " ", "old", " ", "man"}], 
+       "\[CloseCurlyDoubleQuote]"}], ",", "\n", 
+      RowBox[{"\[OpenCurlyDoubleQuote]", 
+       RowBox[{
+       "death", " ", "of", " ", "young", " ", "man", " ", "leaving", " ", 
+        "family"}], "\[CloseCurlyDoubleQuote]"}], ",", 
+      RowBox[{"\[OpenCurlyDoubleQuote]", 
+       RowBox[{
+       "death", " ", "of", " ", "young", " ", "man", " ", "leaving", " ", 
+        "family"}], "\[CloseCurlyDoubleQuote]"}], ",", 
+      RowBox[{"\[OpenCurlyDoubleQuote]", 
+       RowBox[{"death", " ", "of", " ", "an", " ", "infant"}], 
+       "\[CloseCurlyDoubleQuote]"}], ",", "\n", 
+      RowBox[{"\[OpenCurlyDoubleQuote]", 
+       RowBox[{
+        RowBox[{"case", " ", "of", " ", "sunstroke"}], ",", 
+        RowBox[{"with", " ", "delirium"}]}], "\[CloseCurlyDoubleQuote]"}], 
+      ",", 
+      RowBox[{"\[OpenCurlyDoubleQuote]", 
+       RowBox[{
+       "case", " ", "of", " ", "hemorrhage", " ", "with", " ", "fits"}], 
+       "\[CloseCurlyDoubleQuote]"}], ",", 
+      RowBox[{"\[OpenCurlyDoubleQuote]", 
+       RowBox[{"girl", " ", "home", " ", "in", " ", "trouble"}], 
+       "\[CloseCurlyDoubleQuote]"}]}], "}"}]}]}], "Code"]], "Input",
+ CellChangeTimes->{{3.7354839684812403`*^9, 3.735483992816681*^9}, {
+  3.735486827194744*^9, 3.735486831464959*^9}, {3.736868703273498*^9, 
+  3.7368687066462917`*^9}, {3.7391708051762276`*^9, 3.7391708555378213`*^9}, {
+  3.7391785115057063`*^9, 
+  3.739178520346633*^9}},ExpressionUUID->"e3998e4d-7b72-4f12-ab60-\
+8520725af581"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["But To Let the Data Tell Its Story, We Need Lots Of It.", "Section",
+ CellChangeTimes->{
+  3.716825484342502*^9, {3.7169024799646597`*^9, 3.716902483419626*^9}, {
+   3.716902529770506*^9, 3.7169025326018753`*^9}, {3.736094413190734*^9, 
+   3.7360944203553658`*^9}, {3.7391708935900693`*^9, 3.739170925050933*^9}, 
+   3.739171182547059*^9, {3.739177964137359*^9, 
+   3.739177966583905*^9}},ExpressionUUID->"363992ed-65d6-4a46-9388-\
+9c42d41918e4"],
+
+Cell[TextData[{
+ "\[OpenCurlyDoubleQuote]I don\[CloseCurlyQuote]t want heroics, but most \
+details have a trick of looking petty until they can be seen as part of an \
+immense lump which dignifies them.\[CloseCurlyDoubleQuote]\n\n",
+ StyleBox["(* imagine a contemporary dataset with 500,000+ training examples \
+*)", "Code"]
+}], "Text",
+ CellChangeTimes->{{3.7368686183251553`*^9, 3.736868627072585*^9}, {
+   3.7391709330612173`*^9, 3.73917095194742*^9}, {3.73917098214318*^9, 
+   3.7391710374370613`*^9}, 3.7391713389636493`*^9, 
+   3.7391779875460005`*^9},ExpressionUUID->"72b00745-65c9-40a3-989b-\
+179e50d3deb4"],
+
+Cell[TextData[StyleBox["neighborEventsList := { \"death of old man\" , \
+\"death of old man\" , \"death of old man\" , \"death of old man\" , \"death \
+of young man leaving family\" , \"death of young man leaving family\" , \
+\"death of an infant\" , \"case of sunstroke, with delirium\" , \
+\"<<500000>>\" , \"case of hemorrhage with fits\" , \"girl home in trouble\" \
+}", "Code"]], "Text",
+ CellChangeTimes->{{3.7368686183251553`*^9, 3.736868627072585*^9}, {
+  3.7391709330612173`*^9, 3.73917095194742*^9}, {3.73917098214318*^9, 
+  3.739171034603341*^9}, {3.7391780002914796`*^9, 
+  3.7391780002914796`*^9}},ExpressionUUID->"b67135a8-6669-431e-8529-\
+378eb17fb7b0"],
+
+Cell["\<\
+And notice that these two versions of the symbol \
+\[OpenCurlyDoubleQuote]neighborEventsList\[CloseCurlyDoubleQuote] are \
+identical in the way one can work with them. They are both just lists.\
+\>", "Text",
+ CellChangeTimes->{{3.7368686183251553`*^9, 3.736868627072585*^9}, {
+  3.7391709330612173`*^9, 3.73917095194742*^9}, {3.73917098214318*^9, 
+  3.739171034603341*^9}, {3.739178021359424*^9, 
+  3.7391780923912687`*^9}},ExpressionUUID->"33b6d64b-88aa-45a4-bd15-\
+8aca8145099b"],
+
+Cell["", "Text",
+ CellChangeTimes->{{3.7368686183251553`*^9, 3.736868627072585*^9}, {
+  3.7391709330612173`*^9, 3.73917095194742*^9}, {3.73917098214318*^9, 
+  3.7391710314062243`*^9}},ExpressionUUID->"43b908e6-cc1d-4934-89c1-\
+749cc3a3c7ad"],
+
+Cell[TextData[StyleBox["The New Art Works From the Bottom Up, Not From the \
+Top Down.", "Section"]], "Text",
+ CellChangeTimes->{{3.7368686183251553`*^9, 3.736868647099249*^9}, {
+  3.739171354909227*^9, 3.739171367875448*^9}, {3.739171416033764*^9, 
+  3.7391714201683207`*^9}},ExpressionUUID->"07a294c8-d560-41d7-aec1-\
+7445f654a5af"],
+
+Cell[TextData[{
+ "It took a rare person to get beyond the prevailing wisdom of the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"day", " ", 
+    RowBox[{"(", "that"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "9703cedf-cc06-41e6-ade4-f1031bca5eeb"],
+ " the world operates from the top down) and to entertain the idea that it \
+can all happen from the  bottom up. And probably does."
+}], "Text",
+ CellChangeTimes->{{3.7368686183251553`*^9, 3.736868647099249*^9}, 
+   3.739171354909227*^9, {3.7391714322999516`*^9, 3.7391715422396164`*^9}, {
+   3.7391781715691023`*^9, 
+   3.73917821899677*^9}},ExpressionUUID->"fbbaab04-6e80-4340-8229-\
+327c630266ad"],
+
+Cell["\<\
+\[OpenCurlyDoubleQuote]Theology starts with God creating all things, then \
+works down to \[OpenCurlyQuote]mere\[CloseCurlyQuote] dust, \
+\[OpenCurlyQuote]mere\[CloseCurlyQuote] atoms, \[OpenCurlyQuote]mere\
+\[CloseCurlyQuote] matter. And we talk of these things scornfully, as if \
+there was nothing wonderful in them \[Ellipsis] But what if we begin at the \
+other end? How if we acknowledge \[Ellipsis] this splendour in \
+\[OpenCurlyQuote]Dust,\[CloseCurlyQuote] in atoms, in matter, that (perhaps \
+as outcome of its inscrutable nature) it works itself up by some unknown and \
+unknowable urge, into Stellar universes, into Life, into Friendship, into \
+fancy that imagines \[OpenCurlyQuote]God\[CloseCurlyQuote]? \[Ellipsis] and \
+the thing that theology despises turns out to be beyond words splendid, \
+beyond the utmost reaches of thought mysterious and beautiful.\
+\[CloseCurlyDoubleQuote]\
+\>", "Text",
+ CellChangeTimes->{{3.7368686183251553`*^9, 3.736868647099249*^9}, 
+   3.739171354909227*^9, {3.7391714322999516`*^9, 3.739171520548588*^9}, {
+   3.7391715591933556`*^9, 3.7391715717464037`*^9}, {3.7391768809149766`*^9, 
+   3.7391768809149766`*^9}, {3.7391772831751847`*^9, 
+   3.7391772831751847`*^9}},ExpressionUUID->"84ed1ac4-b886-438d-bbe9-\
+e6260caef6da"],
+
+Cell["\<\
+All too often, today\[CloseCurlyQuote]s students are introduced to genomics \
+by the example of the cystic fibrosis gene, which has impact all by itself.\
+\>", "Text",
+ CellChangeTimes->{{3.7368686183251553`*^9, 3.736868647099249*^9}, 
+   3.739171354909227*^9, {3.7391714322999516`*^9, 3.739171520548588*^9}, {
+   3.7391715591933556`*^9, 3.7391715717464037`*^9}, {3.7391768809149766`*^9, 
+   3.7391768809149766`*^9}, {3.7391772850006166`*^9, 3.739177292534607*^9}, {
+   3.739178235678176*^9, 
+   3.7391782385303454`*^9}},ExpressionUUID->"e209cfc4-2993-4e39-9aa4-\
+6ca59e1bea0b"],
+
+Cell[TextData[{
+ StyleBox["cysticFibrosis := list[ CFTRgene ] ;", "Code"],
+ "\n\nThat is not how genes in general work. Genetics is a world where \
+hundreds of genes work together to have influence in multiple places.It takes \
+an immense lump of them:"
+}], "Text",
+ CellChangeTimes->{{3.7368686183251553`*^9, 3.736868647099249*^9}, 
+   3.739171354909227*^9, {3.7391714322999516`*^9, 3.739171520548588*^9}, {
+   3.7391715591933556`*^9, 3.7391715717464037`*^9}, {3.7391768809149766`*^9, 
+   3.7391768809149766`*^9}, {3.7391772850006166`*^9, 3.7391772959245214`*^9}, 
+   3.7391783370795164`*^9},ExpressionUUID->"9de566ac-9609-419e-a8ab-\
+db3eb3c2ae34"],
+
+Cell[TextData[StyleBox["spatialReasoning := list[ geneABC , <<100>> , geneXYZ \
+] ;", "Code"]], "Text",
+ CellChangeTimes->{{3.7368686183251553`*^9, 3.736868647099249*^9}, 
+   3.739171354909227*^9, {3.7391714322999516`*^9, 3.739171520548588*^9}, {
+   3.7391715591933556`*^9, 3.7391715717464037`*^9}, {3.7391768809149766`*^9, 
+   3.7391768809149766`*^9}, 3.7391772850006166`*^9, {3.739177414117838*^9, 
+   3.739177414117838*^9}, 
+   3.739178332896298*^9},ExpressionUUID->"154e74e9-8e12-41eb-a878-\
+9c080b0b499a"],
+
+Cell["\<\
+Kids today need to start their thinking with long (who cares how long) lists, \
+not with lists of just one number.\
+\>", "Text",
+ CellChangeTimes->{{3.7368686183251553`*^9, 3.736868647099249*^9}, 
+   3.739171354909227*^9, {3.7391714322999516`*^9, 3.739171520548588*^9}, {
+   3.7391715591933556`*^9, 3.7391715717464037`*^9}, {3.7391768809149766`*^9, 
+   3.7391768809149766`*^9}, 3.7391772850006166`*^9, 3.739177415657006*^9, {
+   3.7391774465917454`*^9, 3.7391774670431805`*^9}, {3.739178280440366*^9, 
+   3.7391783211203833`*^9}},ExpressionUUID->"e52b5750-0b53-4a95-9793-\
+5291240d9f30"],
+
+Cell[BoxData["\n"], "Input",
+ CellChangeTimes->{{3.7391769186857176`*^9, 3.739176931228874*^9}, {
+   3.739177053010917*^9, 3.739177064233568*^9}, 3.739177274283476*^9, {
+   3.7391773475979614`*^9, 3.739177348121785*^9}, {3.739177385985098*^9, 
+   3.739177393658474*^9}, {3.7391774786702995`*^9, 
+   3.739177499309552*^9}},ExpressionUUID->"00c65ba7-cd45-4902-81f0-\
+f6d39fef26c4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Life Itself Is a Neural Network", "Section",
+ CellChangeTimes->{{3.70077612322993*^9, 3.7007761320921593`*^9}, {
+   3.7007787731699142`*^9, 3.70077877480995*^9}, {3.735655649442748*^9, 
+   3.735655649665411*^9}, 
+   3.739176964394576*^9},ExpressionUUID->"9da19663-7179-45c9-8160-\
+ad35832309c2"],
+
+Cell["\<\
+Sturt understood the key element of a neural network: the intelligence is \
+spread across the whole network; no single node has it all.\
+\>", "Text",
+ CellChangeTimes->{{3.7007765492418337`*^9, 3.7007765636102467`*^9}, {
+   3.705104213701561*^9, 3.7051042224510612`*^9}, {3.7051697227932177`*^9, 
+   3.7051697367862177`*^9}, {3.7056847753333597`*^9, 3.7056847788413363`*^9}, 
+   3.705685608918363*^9, 3.716902605618763*^9, {3.7391769852765355`*^9, 
+   3.739176997833759*^9}},ExpressionUUID->"45c45f6e-321c-4ce7-9657-\
+950c1134d308"],
+
+Cell["\<\
+\[OpenCurlyDoubleQuote]The lore was a tangled network of country prejudices, \
+whose reasons were known in some respects here, in others there, and so on. \
+In farm-yard, in tap-room, at market, the details were discussed over and \
+over again; they were gathered together for remembrance in village workshop; \
+carters, smiths, farmers, wheel-makers, in thousands handed on each his own \
+little bit of understanding, passing it to his son or the wheelwright of the \
+day, linking up the centuries. But for the most part the details were but \
+dimly understood; the whole body of knowledge was a mystery, a piece of folk \
+knowledge, residing in the folk collectively, but never wholly in any \
+individual.\[CloseCurlyDoubleQuote] \
+\>", "Text",
+ CellChangeTimes->{{3.7007765492418337`*^9, 3.7007765636102467`*^9}, {
+   3.705104213701561*^9, 3.7051042224510612`*^9}, {3.7051697227932177`*^9, 
+   3.7051697367862177`*^9}, {3.7056847753333597`*^9, 3.7056847788413363`*^9}, 
+   3.705685608918363*^9, 3.716902605618763*^9, {3.7391769852765355`*^9, 
+   3.739177041757678*^9}, {3.739177609734121*^9, 
+   3.739177609734121*^9}},ExpressionUUID->"668410b2-1189-4abe-827e-\
+a4e728c41c45"],
+
+Cell[TextData[{
+ "\n",
+ StyleBox["horizontalGapDivisor := 8.0 / Max[ nodeList ] ;\n\
+availableVerticalSpace := graphHeight - topMargin -bottomMargin ;\n\
+verticalNodePixels := availableVerticalSpace / Max[ nodeList ] ;\n\
+availableVerticalDiameter := verticalNodePixels * verticalGapDivisor / ( \
+verticalGapDivisor + 1 ) ;\navailableHorizontalSpace := graphWidth - \
+leftMargin - rightMargin ;\nhorizontalNodePixels := availableHorizontalSpace \
+/ ( Length[ nodeList ] + 1 ) ;\navailableHorizontalDiameter := \
+horizontalNodePixels * horizontalGapDivisor / ( horizontalGapDivisor + 1 ) ;\n\
+nodeRadius:= 0.5 * Min[ availableVerticalDiameter , \
+availableHorizontalDiameter ] ;\nverticalGap := verticalNodePixels - \
+availableVerticalDiameter ;\nhorizontalGap := horizontalNodePixels - \
+nodeRadius ;\noutputNodeX := Length[ nodeList ] * ( 2 * nodeRadius + ( 2 / \
+horizontalGapDivisor ) *nodeRadius ) ;\nhorizontalIndent := 0.5 * ( \
+graphWidth - outputNodeX + leftMargin ) ;\n\nIf[ Length[ nodeList ] == 3 ,\n\
+verticalIndents := { 0 , 18 , 18 } ,\n(\nverticalIndents := {} ;\n\
+For[i=1,i<=Length[ nodeList ],i++,\nthisHiddenLayerNodeCount := nodeList[[ i  \
+]] ;\nthisHiddenLayerVerticalExtent := 2 * nodeRadius * \
+thisHiddenLayerNodeCount + verticalGap * ( thisHiddenLayerNodeCount - 1 ) ;\n\
+thisVerticalIndent := topMargin + 0.5 * ( graphHeight - topMargin - \
+bottomMargin - thisHiddenLayerVerticalExtent ) ;\nAppendTo[  verticalIndents \
+, thisVerticalIndent  ] ;\n] ;\n) ;\n] ;\n\nnodesXY := { } ;\ninputNodes := \
+{} ;\nhiddenNodes := {} ;\nouputNodes := {} ;\nFor[ overallLayers = 1 , \
+overallLayers <= Length[ nodeList ] , overallLayers++ ,\nFor[ \
+nodesInThisLayer = 1 , nodesInThisLayer <= nodeList[[ overallLayers  ]] , \
+nodesInThisLayer++,\ntempDouble := ( overallLayers - 1 ) * ( 2 * nodeRadius + \
+( 2.0 / horizontalGapDivisor ) * nodeRadius ) ;\nthisNodeX := \
+horizontalIndent + tempDouble ;\n\nIf[ overallLayers == 1 && nodeList[[1]] > \
+maxHiddenLayer ,\nthisNodeY := topMargin + nodeRadius + ( nodesInThisLayer - \
+1 ) * (2 * nodeRadius + verticalGap ) ,\nthisNodeY := verticalIndents[[ \
+overallLayers ]] + nodeRadius + ( nodesInThisLayer - 1 ) * (2 * nodeRadius + \
+verticalGap )\n] ;\n\nthisNodeXY := { { thisNodeX  , thisNodeY }  , \
+nodeRadius  } ;\nIf[ overallLayers==1 , AppendTo[ inputNodes , thisNodeXY ] , \
+, ] ;\nIf [overallLayers > 1 && overallLayers < Length[nodeList] - 1 , \
+AppendTo[ hiddenNodes , thisNodeXY ] , , ] ;\nIf[  overallLayers >= \
+Length[nodeList] - 1 ,AppendTo[ ouputNodes , thisNodeXY ] , , ] ;\nAppendTo[ \
+nodesXY , thisNodeXY ] ;\n] ;\n] ;\n\nthreeNodeTypes := {} ;\nAppendTo[ \
+threeNodeTypes , inputNodes ] ;\nAppendTo[ threeNodeTypes , hiddenNodes ] ;\n\
+AppendTo[ threeNodeTypes , ouputNodes ] ;\nReturn[  threeNodeTypes  ] ;\n)\n\n\
+(*****************************************************************************\
+****)\n\npositionAllLinks[ nodesPerLayer_ , nodeCenters_]:= \n(\nnodeXYs:= {} \
+;\nnodeRadii := {} ;\nFor[ i = 1 , i <= Length[ nodeCenters ] , i++ ,\n\
+AppendTo[ nodeXYs , Part[ nodeCenters[[ i ]] , 1 ] ] ;\nAppendTo[ nodeRadii , \
+Part[ nodeCenters[[ i ]] , 2 ] ] ;\n] ;\nlocalLayerCounts = Prepend[ \
+nodesPerLayer , 0 ] ;\n\nstart = 1 ;\nlayerCenters := {} ;\nlayerNodeRadii := \
+{} ;\nFor[ i = 1 , i < Length[ localLayerCounts ] , i++ ,(\nend = start + \
+localLayerCounts[[ i+1  ]] - 1 ;\nthislayerList := nodeXYs[[ start;;end ]] ;\n\
+AppendTo[ layerCenters , nodeXYs[[ start;;end ]]  ] ;\nAppendTo[ \
+layerNodeRadii , nodeRadii[[ start;;end ]] ] ;\nstart = start + \
+localLayerCounts[[ i+1  ]] ;\n)\n] ;\n\ncenterToCenterXYs = {} ;\n\
+croppedInputXYs = {} ;\ncroppedHiddenXYs = {} ;\ncroppedOutputXYs = {} ;\n\
+For[ i = 1 , i <= Length[ layerCenters ] - 1 , i++ , (\nsourceNodeList := \
+layerCenters[[i]] ;\ndestinationNodeList := layerCenters[[i+1]] ;\n\nFor[ j = \
+1 , j <= Length[ sourceNodeList ] , j++ , (\nFor[ k=1 , \
+k<=Length[destinationNodeList] , k++ , (\n\npoint1X := Part[ sourceNodeList[[ \
+j]] , 1 ] ;\npoint1Y := Part[ sourceNodeList[[ j]] , 2 ] ;\npoint2X := Part[ \
+destinationNodeList[[k]] , 1 ] ;\npoint2Y := Part[ destinationNodeList[[k]] , \
+2 ] ;\nradius1 := Part[ layerNodeRadii[[i]] , 1 ] ;\nradius2 := Part[ \
+layerNodeRadii[[i]] , 1 ] ;\n\ndeltaY := point2Y - point1Y ;\ndeltaX := \
+point2X - point1X ;\nlength := Sqrt[ deltaX * deltaX + deltaY * deltaY ] ;\n\
+r1L := radius1 / length ;\nr2L := radius2 / length ;\n\npoint1Y = \
+SetPrecision[ point1Y + deltaY * r1L, 4 ] ;\npoint2Y = SetPrecision[ point2Y \
+- deltaY * r2L, 4  ] ;\npoint1X = SetPrecision[  point1X + deltaX * r1L, 4  ] \
+;\npoint2X = SetPrecision[ point2X - deltaX * r2L, 4  ] ;\nthisCroppedXY := { \
+{ point1X , point1Y } , { point2X , point2Y } } ;\n\nIf[ i<2 , AppendTo[ \
+croppedInputXYs , thisCroppedXY ] , ] ;\nIf[ i>1 && i < Length[layerCenters ] \
+- 2 , AppendTo[ croppedHiddenXYs , thisCroppedXY ] , ] ;\nIf[ i>= \
+Length[layerCenters ] - 2 , AppendTo[ croppedOutputXYs , thisCroppedXY ] , ] \
+;\nAppendTo[ centerToCenterXYs , thisCroppedXY ] ;\n)\n] ;\n)\n] ;\n)\n] ;\n\
+threeLinkTypes := {} ;\nAppendTo[ threeLinkTypes , croppedInputXYs ] ;\n\
+AppendTo[ threeLinkTypes , croppedHiddenXYs ] ;\nAppendTo[ threeLinkTypes , \
+croppedOutputXYs ] ;\nReturn[  threeLinkTypes  ] ;\n)\n\n\
+(*****************************************************************************\
+*************)\n\nshowNeuralNetwork[ nodesPerLayerList_] := (\n\
+prunedLayerList = {} ;\nFor[ i = 1 , i <= Length[ nodesPerLayerList ] , i++ , \
+\nIf[ nodesPerLayerList[[i]] > 0 , AppendTo[ prunedLayerList , \
+nodesPerLayerList[[i]] ] , ] ;\n] ;\n\nsplitNodeCenterList := positionNodes[ \
+prunedLayerList ] ;\ninputLayerNodes := Part[ splitNodeCenterList , 1 ] ;\n\
+hiddenLayerNodes := Part[ splitNodeCenterList , 2 ] ;\noutputLayerNodes := \
+Part[ splitNodeCenterList , 3 ] ;\n\ninputNodesFontSize = 10.0 * nodeRadius ;\
+\ninputNodeLabels := {} ;\nFor[ q=1 , q <= Length[  inputLayerNodes ], q++ ,\n\
+thisNodeLayer = Part[ inputLayerNodes[[q]] , 1 ] ;\nthisNodeLayerXY = { Part[ \
+thisNodeLayer , 1  ] ,  Part[ thisNodeLayer , 2  ] - nodeRadius / 7.0 } ;\n\
+AppendTo[ inputNodeLabels , { \
+\[OpenCurlyDoubleQuote]X\[CloseCurlyDoubleQuote] , thisNodeLayerXY }  ] ;\n] \
+;\n\nhiddenNodesFontSize = 10.0 * nodeRadius ;\nhiddenNodeLabels := {} ;\n\
+For[ r=1 , r <= Length[  hiddenLayerNodes ], r++ ,\nthisNodeLayer = Part[ \
+hiddenLayerNodes[[r]] , 1 ] ;\nthisNodeLayerXY = { Part[ thisNodeLayer , 1  ] \
+,  Part[ thisNodeLayer , 2  ] - nodeRadius / 7.0 } ;\nAppendTo[ \
+hiddenNodeLabels , { \[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote] , \
+thisNodeLayerXY } ]\n];\n\noutputNodesFontSize = 10.0 * nodeRadius ;\n\
+outputNodeLabels := {} ;\nFor[ s=1 , s <= Length[  outputLayerNodes ], s++ ,\n\
+thisNodeLayer = Part[ outputLayerNodes[[s]] , 1 ] ;\nthisNodeLayerXY = { \
+Part[ thisNodeLayer , 1  ] ,  Part[ thisNodeLayer , 2  ] - nodeRadius / 7.0 } \
+;\nIf[ s==1 ,\nAppendTo[ outputNodeLabels , { \[OpenCurlyDoubleQuote]A\
+\[CloseCurlyDoubleQuote] , thisNodeLayerXY } ] ,\nAppendTo[ outputNodeLabels \
+, { \[OpenCurlyDoubleQuote]Y\[CloseCurlyDoubleQuote] , thisNodeLayerXY } ]\n] \
+;\n];\nhatFontSize = 18.0 * nodeRadius ;\nthisNodeLayer = Part[ \
+outputLayerNodes[[2]] , 1 ] ;\nthisNodeLayerXY = { Part[ thisNodeLayer , 1  ] \
++ nodeRadius / 10.0 ,  Part[ thisNodeLayer , 2  ] - nodeRadius / 4.4 } ;\n\
+hatLabel = { { \[OpenCurlyDoubleQuote]\:02c6\[CloseCurlyDoubleQuote] , \
+thisNodeLayerXY } } ;\n\nnodeCenterList := Join[ inputLayerNodes , \
+hiddenLayerNodes , outputLayerNodes ] ;\ntripleNetworkLinks := \
+positionAllLinks[prunedLayerList , nodeCenterList] ;\ninputLayerLinks := \
+Part[ tripleNetworkLinks , 1 ] ;\nhiddenLayerLinks := Part[ \
+tripleNetworkLinks , 2 ] ;\noutputLayerLinks := Part[ tripleNetworkLinks , 3 \
+] ;\n\nGraphics[{ Thick , Arrowheads[Medium] ,\nMagenta , Arrow /@ \
+inputLayerLinks , \nGray , Arrow /@ hiddenLayerLinks , \nBlue , Arrow /@ \
+outputLayerLinks  , \n\nEdgeForm[{Magenta, Thick}], FaceForm[LightMagenta], \
+Disk @@@ inputLayerNodes , \nEdgeForm[{Gray, Thick}], \
+FaceForm[LightGray],Disk @@@ hiddenLayerNodes , \nEdgeForm[{Blue, Thick}],, \
+FaceForm[LightBlue] , Disk @@@ outputLayerNodes  , \n\nMagenta ,FontSize-> \
+inputNodesFontSize , Text @@@ inputNodeLabels ,\nBlack ,FontSize-> \
+hiddenNodesFontSize , Text @@@ hiddenNodeLabels ,\nBlue ,FontSize-> \
+outputNodesFontSize , Text @@@ outputNodeLabels ,\nBlue ,FontSize-> \
+hatFontSize , Text @@@ hatLabel\n\n}, \nImageSize->Full]\n\n) ;\n\n\
+showNeuralNetwork[ { 2 , 4  , 3 ,  4 , 1 , 1   } ] ;\[LineSeparator]\
+\[LineSeparator]", "Code"]
+}], "Text",
+ CellChangeTimes->{{3.7007765492418337`*^9, 3.7007765636102467`*^9}, {
+   3.705104213701561*^9, 3.7051042224510612`*^9}, {3.7051697227932177`*^9, 
+   3.7051697367862177`*^9}, {3.7056847753333597`*^9, 3.7056847788413363`*^9}, 
+   3.705685608918363*^9, 3.716902605618763*^9, {3.7391769852765355`*^9, 
+   3.739177041757678*^9}, 3.7391776130597486`*^9, 3.7391777519434066`*^9, 
+   3.7391783623061156`*^9},ExpressionUUID->"5a1cd55e-08dd-427e-b46e-\
+afc4b12127d9"],
+
+Cell["", "Text",
+ CellChangeTimes->{{3.7007765492418337`*^9, 3.7007765636102467`*^9}, {
+   3.705104213701561*^9, 3.7051042224510612`*^9}, {3.705105582902875*^9, 
+   3.7051055862950687`*^9}, 3.705685620863511*^9, 3.7169026105308657`*^9, 
+   3.735483436579891*^9, {3.7391775390469933`*^9, 
+   3.7391775445448933`*^9}},ExpressionUUID->"974d1d02-3f81-4f9f-a141-\
+4f1608fd9d6a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Author contact information", "Section",
+ CellChangeTimes->{{3.736868777412567*^9, 
+  3.736868791070746*^9}},ExpressionUUID->"a78f6e4f-dbdf-4763-a44f-\
+16569b36e665"],
+
+Cell["bailey@selfschooling.com", "Text",
+ CellChangeTimes->{{3.736868838667325*^9, 3.736868890391745*^9}, {
+  3.7391771482325535`*^9, 
+  3.739177159472787*^9}},ExpressionUUID->"a4e585e2-fad1-40ff-85de-\
+7b4c754eae54"],
+
+Cell["", "Text",
+ CellChangeTimes->{{3.736868838667325*^9, 3.736868890391745*^9}, {
+  3.7391771482325535`*^9, 
+  3.7391771568530345`*^9}},ExpressionUUID->"1310d939-305b-4c51-b5aa-\
+b18961db33c5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Guidelines for the Author", "Chapter",
+ CellFrame->{{False, False}, {True, True}},
+ CellMargins->{{27, Inherited}, {10, 100}},
+ CellChangeTimes->{{3.73565601123527*^9, 3.735656013113811*^9}, {
+  3.736090596218631*^9, 
+  3.736090610128833*^9}},ExpressionUUID->"a91b0c22-4606-4122-bf19-\
+3d4bcd746f4c"],
+
+Cell["Image", "Subsection",
+ CellChangeTimes->{{3.736090438961504*^9, 
+  3.7360904406539497`*^9}},ExpressionUUID->"962879f3-9b11-4b56-8992-\
+fa4001376df9"],
+
+Cell["Text", "Subsection",
+ CellChangeTimes->{{3.7356560569996862`*^9, 3.73565606688798*^9}, {
+  3.7360900717675047`*^9, 
+  3.736090079428916*^9}},ExpressionUUID->"f46ef323-e1f9-43b8-b626-\
+fa17b9c9a91b"],
+
+Cell["Code", "Subsection",
+ CellChangeTimes->{{3.7356560569996862`*^9, 3.735656073616704*^9}, {
+  3.736090288389758*^9, 
+  3.73609028878813*^9}},ExpressionUUID->"f9a42e24-3257-4b35-8468-\
+5b9b14030d1c"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{923, 817},
+WindowMargins->{{Automatic, 137}, {Automatic, 13}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 7, 2018)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[StyleDefinitions -> "Default.nb"]], 
+   Cell[
+    StyleData["Title"], PageWidth -> WindowWidth, ShowCellBracket -> False, 
+    CellMargins -> {{0, 0}, {0, 0}}, 
+    CellBracketOptions -> {"OverlapContent" -> True}, 
+    CellElementSpacings -> {"ClosedGroupTopMargin" -> 150}, 
+    CellGroupingRules -> {"TitleGrouping", 0}, PageBreakAbove -> True, 
+    CellFrameMargins -> {{20, 50}, {6, 78}}, TextAlignment -> Left, 
+    LineSpacing -> {1, 4}, LanguageCategory -> "NaturalLanguage", 
+    CounterIncrements -> {"Title"}, 
+    CounterAssignments -> {{"Section", 0}, {"Equation", 0}, {"Figure", 0}, {
+      "Subtitle", 0}, {"Subsubtitle", 0}, {"Item", 0}, {"Subitem", 0}, {
+      "Subsubitem", 0}, {"ItemNumbered", 0}, {"SubitemNumbered", 0}, {
+      "SubsubitemNumbered", 0}}, MenuSortingValue -> 1100, MenuCommandKey -> 
+    "1", FontFamily -> "Source Sans Pro", FontSize -> 44, 
+    FontTracking -> -0.8, FontColor -> RGBColor[255, 255, 255], Background -> 
+    RGBColor[0.71375, 0.20785, 0.17255]], 
+   Cell[
+    StyleData["Abstract"], PageWidth -> WindowWidth, ShowCellBracket -> False,
+     ShowSelection -> True, CellMargins -> {{0, 0}, {0, 0}}, 
+    CellBracketOptions -> {"OverlapContent" -> True}, 
+    CellFrameMargins -> {{30, 40}, {24, 2}}, TextAlignment -> Left, 
+    FontFamily -> "Source Sans Pro", FontSize -> 16, FontSlant -> "Italic", 
+    FontColor -> RGBColor[255, 255, 255], Background -> 
+    RGBColor[0.71375, 0.20785, 0.17255]], 
+   Cell[
+    StyleData["AuthorInfo"], PageWidth -> WindowWidth, 
+    CellFrame -> {{0, 0}, {8, 0}}, ShowCellBracket -> True, ShowSelection -> 
+    True, CellMargins -> {{0, 0}, {0, 0}}, 
+    CellBracketOptions -> {"OverlapContent" -> True}, 
+    CellFrameMargins -> {{30, 40}, {10, 4}}, CellFrameColor -> 
+    RGBColor[0.988235, 0.403922, 0.0313725], TextAlignment -> Left, 
+    FontFamily -> "Source Sans Pro", FontSize -> 17, FontWeight -> "SemiBold",
+     FontSlant -> "Plain", FontColor -> RGBColor[255, 255, 255], Background -> 
+    RGBColor[0.71375, 0.20785, 0.17255]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Chapter"], ShowCellBracket -> False, 
+       CellMargins -> {{20, 30}, {10, 45}}, 
+       StyleKeyMapping -> {
+        "Tab" -> "Subchapter", "Backspace" -> 
+         "Title", $CellContext`KeyEvent[
+          "Tab", $CellContext`Modifiers -> {$CellContext`Shift}] -> "Title"}, 
+       CellGroupingRules -> {"SectionGrouping", 10}, PageBreakBelow -> False, 
+       LineSpacing -> {1, 4}, LanguageCategory -> "NaturalLanguage", 
+       CounterIncrements -> "Chapter", 
+       CounterAssignments -> {{"Subchapter", 0}, {"Section", 0}, {
+         "Equation", 0}, {"Figure", 0}, {"Subsubtitle", 0}, {"Item", 0}, {
+         "Subitem", 0}, {"Subsubitem", 0}, {"ItemNumbered", 0}, {
+         "SubitemNumbered", 0}, {"SubsubitemNumbered", 0}}, MenuSortingValue -> 
+       1150, MenuCommandKey -> "2", FontFamily -> "Source Sans Pro", FontSize -> 
+       34, FontTracking -> -0.5, FontColor -> 
+       RGBColor[
+        0.21176470588235294`, 0.21176470588235294`, 0.21176470588235294`]], 
+      Cell[
+       StyleData["Chapter", "Presentation"], 
+       CellMargins -> {{67, Inherited}, {10, 15}}, LineSpacing -> {1, 16}, 
+       FontSize -> 48], 
+      Cell[
+       StyleData["Chapter", "SlideShow"], 
+       CellMargins -> {{
+         0.135 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.04 
+          FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {10, 15}}, 
+       LineSpacing -> {1, 2}, FontSize -> 48], 
+      Cell[
+       StyleData["Chapter", "Condensed"], CellMargins -> {{18, 10}, {5, 7}}, 
+       FontSize -> 14], 
+      Cell[
+       StyleData["Chapter", "Printout"], 
+       CellMargins -> {{10, Inherited}, {10, 15}}], 
+      Cell[
+       StyleData["Chapter", "PrintoutGray"], 
+       CellMargins -> {{10, Inherited}, {10, 15}}]}, Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Section"], CellFrame -> False, ShowCellBracket -> True, 
+       CellMargins -> {{20, 30}, {10, 25}}, Evaluatable -> False, 
+       CellGroupingRules -> {"SectionGrouping", 40}, PageBreakBelow -> False, 
+       CellChangeTimes -> {3.716825484342502*^9}, Hyphenation -> False, 
+       CounterIncrements -> "Section", 
+       CounterAssignments -> {{"Subsection", 0}, {"Subsubsection", 0}, {
+         "ItemNumbered", 0}}, AspectRatioFixed -> True, FontFamily -> 
+       "Source Sans Pro", FontSize -> 28, FontTracking -> -0.5, FontColor -> 
+       RGBColor[0.71375, 0.20785, 0.17255]], 
+      Cell[
+       StyleData["Section", "Presentation", StyleDefinitions -> None]], 
+      Cell[
+       StyleData["Section", "SlideShow", StyleDefinitions -> None]], 
+      Cell[
+       StyleData["Section", "Printout", StyleDefinitions -> None]]}, Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Subsection"], ShowCellBracket -> False, 
+       CellMargins -> {{20, 30}, {6, 12}}, 
+       CellGroupingRules -> {"SectionGrouping", 50}, PageBreakBelow -> False, 
+       Hyphenation -> False, LineSpacing -> {1, 1}, CounterIncrements -> 
+       "Subsection", 
+       CounterAssignments -> {{"Subsubsection", 0}, {"ItemNumbered", 0}}, 
+       FontFamily -> "Source Sans Pro", FontSize -> 23, FontTracking -> -0.5, 
+       FontColor -> RGBColor[0.71375, 0.20785, 0.17255]], 
+      Cell[
+       StyleData["Subsection", "Presentation", StyleDefinitions -> None]], 
+      Cell[
+       StyleData["Subsection", "SlideShow", StyleDefinitions -> None]], 
+      Cell[
+       StyleData["Subsection", "Printout", StyleDefinitions -> None]]}, 
+     Closed]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Subsubsection"], ShowCellBracket -> False, 
+       CellMargins -> {{21, 21}, {2, 8}}, 
+       CellGroupingRules -> {"SectionGrouping", 60}, PageBreakBelow -> False, 
+       Hyphenation -> False, LineSpacing -> {1, 1}, CounterIncrements -> 
+       "Subsubsection", CounterAssignments -> {{"ItemNumbered", 0}}, 
+       FontFamily -> "Source Sans Pro", FontSize -> 18, FontTracking -> -0.5, 
+       FontColor -> RGBColor[0.9254901960784314, 0.49019607843137253`, 0.2]], 
+      Cell[
+       StyleData["Subsubsection", "Presentation", StyleDefinitions -> None]], 
+      Cell[
+       StyleData["Subsubsection", "SlideShow", StyleDefinitions -> None]], 
+      Cell[
+       StyleData["Subsubsection", "Printout", StyleDefinitions -> None]]}, 
+     Closed]], 
+   Cell[
+    StyleData["FurtherExplorationSection"], CellFrame -> {{0, 0}, {0, 0.5}}, 
+    ShowCellBracket -> False, CellMargins -> {{20, 30}, {4, 24}}, 
+    CellGroupingRules -> {"SectionGrouping", 30}, 
+    CellFrameMargins -> {{0, 0}, {0, 22}}, CellFrameColor -> GrayLevel[0.8], 
+    DefaultNewCellStyle -> "FurtherExploration", FontFamily -> 
+    "Source Sans Pro", FontSize -> 18, 
+    FontVariations -> {"CapsType" -> "AllCaps"}, FontColor -> 
+    RGBColor[0.2784313725490196, 0.2784313725490196, 0.2784313725490196]], 
+   Cell[
+    StyleData["FurtherExploration", StyleDefinitions -> StyleData["Text"]], 
+    ShowCellBracket -> False, CellMargins -> {{20, 10}, {2, 4}}, 
+    ReturnCreatesNewCell -> True, FontFamily -> "Source Sans Pro", FontSize -> 
+    16, FontColor -> RGBColor[0.71375, 0.20785, 0.17255]], 
+   Cell[
+    StyleData["AuthorshipSection"], ShowCellBracket -> False, 
+    CellMargins -> {{20, Inherited}, {4, 22}}, 
+    CellGroupingRules -> {"SectionGrouping", 30}, DefaultNewCellStyle -> 
+    "FurtherExploration", FontFamily -> "Source Sans Pro", FontSize -> 18, 
+    FontVariations -> {"CapsType" -> "AllCaps"}, FontColor -> 
+    RGBColor[0.2784313725490196, 0.2784313725490196, 0.2784313725490196]], 
+   Cell[
+    StyleData["Authorship", StyleDefinitions -> StyleData["Text"]], 
+    ShowCellBracket -> False, CellMargins -> {{20, 10}, {2, 4}}, 
+    ReturnCreatesNewCell -> True, FontFamily -> "Source Sans Pro", FontSize -> 
+    16, FontColor -> 
+    RGBColor[0.4392156862745098, 0.4392156862745098, 0.4392156862745098]], 
+   Cell[
+    CellGroupData[{
+      Cell["Styles for Body Text", "Section"], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["Text"], ShowCellBracket -> True, 
+          CellMargins -> {{20, 10}, {6, 8}}, ReturnCreatesNewCell -> True, 
+          DefaultNewCellStyle -> "Direction", FontSize -> 
+          15, $CellContext`DefaultReturnCreatedCellStyle -> "Direction"], 
+         Cell[
+          StyleData["Text", "Presentation", StyleDefinitions -> None]], 
+         Cell[
+          StyleData["Text", "SlideShow", StyleDefinitions -> None]], 
+         Cell[
+          StyleData["Text", "Printout", StyleDefinitions -> None], 
+          TextJustification -> 1.]}, Open]], 
+      Cell[
+       StyleData["CodeText", StyleDefinitions -> StyleData["Text"]], 
+       CellMargins -> {{23, 10}, {3, 8}}, CellFrameLabelMargins -> 4, 
+       MenuSortingValue -> 10000, MenuCommandKey -> "8", FontSize -> 15, 
+       FontWeight -> "Plain", FontColor -> 
+       GrayLevel[0.45], $CellContext`DefaultReturnCreatedCellStyle -> 
+       "Input"]}, Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+      "Styles for Input, Output and Graphics", "Section", 
+       CellChangeTimes -> {3.7168930720372066`*^9}], 
+      Cell[
+       StyleData["Input"], CellMargins -> {{82, 10}, {5, 6}}, 
+       StyleKeyMapping -> {"=" -> "WolframAlphaShort", "*" -> "Item"}, 
+       AutoNumberFormatting -> False, FontSize -> 13], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["InputOnly"], CellMargins -> {{82, 10}, {7, 7}}, FontSize -> 
+          13], 
+         Cell[
+          StyleData["InputOnly", "Presentation"], 
+          CellMargins -> {{100, 10}, {8, 15}}], 
+         Cell[
+          StyleData["InputOnly", "SlideShow"], 
+          CellMargins -> {{100, 10}, {8, 15}}], 
+         Cell[
+          StyleData["InputOnly", "Condensed"], 
+          CellMargins -> {{50, 10}, {2, 3}}], 
+         Cell[
+          StyleData["InputOnly", "Printout"], 
+          CellMargins -> {{49, Inherited}, {Inherited, Inherited}}, 
+          LinebreakAdjustments -> {0.85, 2, 10, 1, 1}], 
+         Cell[
+          StyleData["InputOnly", "PrintoutGray"], 
+          CellMargins -> {{49, Inherited}, {Inherited, Inherited}}, 
+          LinebreakAdjustments -> {0.85, 2, 10, 1, 1}]}, Closed]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["Code"]], 
+         Cell[
+          StyleData["Code", "Presentation"], 
+          CellMargins -> {{100, 10}, {8, 15}}], 
+         Cell[
+          StyleData["Code", "SlideShow"], 
+          CellMargins -> {{
+            0.135 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.01 
+             FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {8, 15}}, 
+          LinebreakAdjustments -> {1, 2., 12., 1., 1.}, FontSize -> 20], 
+         Cell[
+          StyleData["Code", "Condensed"], CellMargins -> {{50, 10}, {2, 3}}], 
+         Cell[
+          StyleData["Code", "Printout"], 
+          CellMargins -> {{49, Inherited}, {Inherited, Inherited}}], 
+         Cell[
+          StyleData["Code", "PrintoutGray"], 
+          CellMargins -> {{49, Inherited}, {Inherited, Inherited}}]}, 
+        Closed]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["Output"], CellMargins -> {{82, 10}, {10, 5}}, FontSize -> 
+          13], 
+         Cell[
+          StyleData["Output", "Presentation"], 
+          CellMargins -> {{100, 10}, {15, 8}}], 
+         Cell[
+          StyleData["Output", "SlideShow"], 
+          CellMargins -> {{
+            0.135 FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}], 0.01 
+             FrontEnd`AbsoluteCurrentValue[{WindowSize, 1}]}, {15, 8}}, 
+          LinebreakAdjustments -> {1, 2., 12., 1., 1.}, FontSize -> 20], 
+         Cell[
+          StyleData["Output", "Condensed"], 
+          CellMargins -> {{50, Inherited}, {3, 2}}], 
+         Cell[
+          StyleData["Output", "Printout"], 
+          CellMargins -> {{49, Inherited}, {9, 3}}], 
+         Cell[
+          StyleData["Output", "PrintoutGray"], 
+          CellMargins -> {{49, Inherited}, {9, 3}}]}, Closed]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          StyleData["PlacedGraphics"], CellFrame -> False, ShowCellBracket -> 
+          False, CellMargins -> {{82, 21}, {8, 10}}, CellGroupingRules -> 
+          "GraphicsGrouping", CellHorizontalScrolling -> True, ShowCellLabel -> 
+          False, TextAlignment -> Left, LineSpacing -> {1, 1}, 
+          InsetBoxOptions -> {
+           BaseStyle -> {CellFrame -> None, Background -> None}}], 
+         Cell[
+          StyleData[
+          "PlacedGraphics", "Presentation", StyleDefinitions -> None]], 
+         Cell[
+          StyleData["PlacedGraphics", "SlideShow", StyleDefinitions -> None]], 
+         Cell[
+          StyleData["PlacedGraphics", "Printout", StyleDefinitions -> None]]},
+         Closed]], 
+      Cell[
+       StyleData["CellLabel"], LineSpacing -> {1, 1}, AutoNumberFormatting -> 
+       False, FontSize -> 9, FontSlant -> "Oblique"]}, Open]]}, Visible -> 
+  False, FrontEndVersion -> 
+  "11.3 for Microsoft Windows (64-bit) (March 7, 2018)", StyleDefinitions -> 
+  "PrivateStylesheetFormatting.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 347, 8, 198, "Title",ExpressionUUID->"755e0098-9782-4df5-8299-7f54266c54d6"],
+Cell[930, 32, 593, 11, 67, "Abstract",ExpressionUUID->"db4efd27-b72d-4835-a486-b18956bba0cb"],
+Cell[1526, 45, 710, 11, 44, "AuthorInfo",ExpressionUUID->"59a63784-4e95-46b9-9a1d-2c013f47161b"],
+Cell[2239, 58, 71, 0, 33, "Text",ExpressionUUID->"85271f44-5b04-421c-bf31-0395fab10c35"],
+Cell[2313, 60, 1142, 18, 99, "Text",ExpressionUUID->"99ddfba3-f2e4-48aa-a886-7472bbc581ac"],
+Cell[CellGroupData[{
+Cell[3480, 82, 562, 9, 71, "Section",ExpressionUUID->"35feb7e4-4e93-4e64-abc0-7b0b86e8128f"],
+Cell[4045, 93, 1038, 16, 99, "Text",ExpressionUUID->"dc3fa30d-000e-45b8-9f6e-f2ffca697a75"],
+Cell[5086, 111, 785, 13, 55, "Text",ExpressionUUID->"8203915f-bb57-4b4c-bc81-5c310a33d338"],
+Cell[5874, 126, 710, 12, 55, "Text",ExpressionUUID->"1e6311c8-a678-4be7-b8df-999d75377b2f"],
+Cell[6587, 140, 445, 7, 30, "CodeText",ExpressionUUID->"6047e34c-4783-4ed0-b0de-5328517365be"],
+Cell[7035, 149, 463, 10, 26, "Input",ExpressionUUID->"6a57f104-ade9-4e69-9c46-f4f2c59d53ab"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7535, 164, 513, 12, 71, "Section",ExpressionUUID->"69c2789e-757d-42de-8e7a-aa67a7c35b9d"],
+Cell[8051, 178, 388, 7, 33, "Text",ExpressionUUID->"7de5c4c6-a64b-46a1-a690-20421acf8327"],
+Cell[8442, 187, 519, 9, 33, "Text",ExpressionUUID->"0ed2d935-e8ff-4c05-9e95-1dd6631482fc"],
+Cell[8964, 198, 839, 14, 77, "Text",ExpressionUUID->"9466d7a5-6c91-476e-b187-d01e2a7a0b79"],
+Cell[9806, 214, 299, 5, 30, "CodeText",ExpressionUUID->"7a9ac988-03a4-4c18-9dca-ea7cdc6e168b"],
+Cell[10108, 221, 2259, 49, 84, "Input",ExpressionUUID->"e3998e4d-7b72-4f12-ab60-8520725af581"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12404, 275, 452, 7, 71, "Section",ExpressionUUID->"363992ed-65d6-4a46-9388-9c42d41918e4"],
+Cell[12859, 284, 615, 11, 99, "Text",ExpressionUUID->"72b00745-65c9-40a3-989b-179e50d3deb4"],
+Cell[13477, 297, 668, 10, 77, "Text",ExpressionUUID->"b67135a8-6669-431e-8529-378eb17fb7b0"],
+Cell[14148, 309, 491, 9, 55, "Text",ExpressionUUID->"33b6d64b-88aa-45a4-bd15-8aca8145099b"],
+Cell[14642, 320, 241, 4, 33, "Text",ExpressionUUID->"43b908e6-cc1d-4934-89c1-749cc3a3c7ad"],
+Cell[14886, 326, 334, 5, 50, "Text",ExpressionUUID->"07a294c8-d560-41d7-aec1-7445f654a5af"],
+Cell[15223, 333, 676, 15, 55, "Text",ExpressionUUID->"fbbaab04-6e80-4340-8229-327c630266ad"],
+Cell[15902, 350, 1284, 20, 121, "Text",ExpressionUUID->"84ed1ac4-b886-438d-bbe9-e6260caef6da"],
+Cell[17189, 372, 588, 10, 33, "Text",ExpressionUUID->"e209cfc4-2993-4e39-9aa4-6ca59e1bea0b"],
+Cell[17780, 384, 650, 11, 99, "Text",ExpressionUUID->"9de566ac-9609-419e-a8ab-db3eb3c2ae34"],
+Cell[18433, 397, 510, 8, 33, "Text",ExpressionUUID->"154e74e9-8e12-41eb-a878-9c080b0b499a"],
+Cell[18946, 407, 597, 10, 33, "Text",ExpressionUUID->"e52b5750-0b53-4a95-9793-5291240d9f30"],
+Cell[19546, 419, 379, 6, 46, "Input",ExpressionUUID->"00c65ba7-cd45-4902-81f0-f6d39fef26c4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19962, 430, 301, 5, 71, "Section",ExpressionUUID->"9da19663-7179-45c9-8160-ad35832309c2"],
+Cell[20266, 437, 542, 9, 33, "Text",ExpressionUUID->"45c45f6e-321c-4ce7-9657-950c1134d308"],
+Cell[20811, 448, 1189, 18, 121, "Text",ExpressionUUID->"668410b2-1189-4abe-827e-a4e728c41c45"],
+Cell[22003, 468, 9054, 126, 4411, "Text",ExpressionUUID->"5a1cd55e-08dd-427e-b46e-afc4b12127d9"],
+Cell[31060, 596, 373, 6, 33, "Text",ExpressionUUID->"974d1d02-3f81-4f9f-a141-4f1608fd9d6a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31470, 607, 171, 3, 71, "Section",ExpressionUUID->"a78f6e4f-dbdf-4763-a44f-16569b36e665"],
+Cell[31644, 612, 217, 4, 33, "Text",ExpressionUUID->"a4e585e2-fad1-40ff-85de-7b4c754eae54"],
+Cell[31864, 618, 195, 4, 33, "Text",ExpressionUUID->"1310d939-305b-4c51-b5aa-b18961db33c5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32096, 627, 306, 6, 170, "Chapter",ExpressionUUID->"a91b0c22-4606-4122-bf19-3d4bcd746f4c"],
+Cell[32405, 635, 155, 3, 47, "Subsection",ExpressionUUID->"962879f3-9b11-4b56-8992-fa4001376df9"],
+Cell[32563, 640, 204, 4, 39, "Subsection",ExpressionUUID->"f46ef323-e1f9-43b8-b626-fa17b9c9a91b"],
+Cell[32770, 646, 202, 4, 39, "Subsection",ExpressionUUID->"f9a42e24-3257-4b35-8468-5b9b14030d1c"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
