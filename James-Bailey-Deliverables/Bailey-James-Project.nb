@@ -10,20 +10,20 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[   3508508,      57956]
-NotebookOptionsPosition[   3498417,      57766]
-NotebookOutlinePosition[   3503514,      57882]
-CellTagsIndexPosition[   3503289,      57873]
+NotebookDataLength[   3509689,      57992]
+NotebookOptionsPosition[   3499241,      57795]
+NotebookOutlinePosition[   3504338,      57911]
+CellTagsIndexPosition[   3504113,      57902]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell["Last modified on: Tuesday, July 10, 2018 at 19:21", \
+Cell["Last modified on: Tuesday, July 10, 2018 at 20:27", \
 "TemplateInstructions",
  Deployed->True,
  Background->RGBColor[0.75, 0.75, 0.75],
  CellTags->
-  "LastModified",ExpressionUUID->"b0e66794-cf60-4d9a-a529-f00ac0d279da"],
+  "LastModified",ExpressionUUID->"90883cda-8393-4641-b299-8b86df94181b"],
 
 Cell[CellGroupData[{
 
@@ -57605,27 +57605,7 @@ fq8jM5u7Q++W3h5Swo0WA7SXsQRee9BugoUl0CU3xbOyShaFwZXAP6r+KBRb
 K+NkSQgb5BiOxQPw9eKh40s/i7kRXBel0q7DUP9afcLwdw1s/t+/Dx/8WOxa
 HMf7sP0Uwt8/xF/P+Gz8/hn/B0A74W4=\
 \>"],ExpressionUUID->"7b973c7a-010f-4cc1-b88a-11be6ff59fbe"],
- "\n\n\n**********************\n\nStudent users of the Wolfram Language at \
-the college physics/mathematics level are used to the convenience that \
-\[OpenCurlyDoubleQuote]what happens in the Wolfram Language stays in the \
-Wolfram Language.\[CloseCurlyDoubleQuote] Deep algorithmic dives routinely \
-alternate with text explanations of those forays. Instructors take advantage \
-of this duality to teach directly from notebooks.\n \nMy premise in this \
-project was that a more visual approach would facilitate younger (Algebra II) \
-students learning to implement and run neural networks. The ability of the \
-language to run the algorithms was never in question; what I wanted to \
-explore has been the ability of the language to offer supporting material in \
-visual form. The results to date have been very positive, limited more by my \
-unfamiliarity with the language than limitations in the language itself. The \
-ability to go seamlessly from explanation to actual computational result is \
-very motivating. It has me wondering if similar results might be had in the \
-subject of block chains.\n\n**************************\n\nThe results \
-described here are best characterized as proof of concept. A fully realized \
-curriculum for a secondary school needs to be deepened in the areas explored \
-here and extended in both directions. There needs to be preparatory work in \
-the portions of linear algebra (not all of it; just some pieces) that come \
-into play. Then there needs to be  a connection to the varieties of training \
-data available from the overall Wolfram environment."
+ "\n\n\n"
 }], "Text",
  CellChangeTimes->{{3.740247517490554*^9, 3.7402475384165163`*^9}, {
    3.7402476479511147`*^9, 3.7402476496854787`*^9}, {3.740247744753667*^9, 
@@ -57640,16 +57620,16 @@ data available from the overall Wolfram environment."
    3.7402526874526415`*^9, 3.7402527435595517`*^9}, {3.7402527743917646`*^9, 
    3.7402529430895724`*^9}, {3.74025545213478*^9, 3.7402554720720167`*^9}, {
    3.7402555494121733`*^9, 3.740255603375327*^9}, {3.740255635422027*^9, 
-   3.7402557170748734`*^9}, {3.740255828677956*^9, 
-   3.7402558369445143`*^9}},ExpressionUUID->"734d1666-d502-4a7a-b47b-\
+   3.7402557170748734`*^9}, {3.740255828677956*^9, 3.7402558369445143`*^9}, {
+   3.7402572649978704`*^9, 
+   3.740257305792939*^9}},ExpressionUUID->"734d1666-d502-4a7a-b47b-\
 dcd2702f6abc"],
 
-Cell[BoxData[
- RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
-  "\[IndentingNewLine]"}]], "Input",
+Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.7402517752502623`*^9, 3.740251788535304*^9}, {
-   3.7402520222312503`*^9, 3.7402520625070343`*^9}, 
-   3.7402522208294196`*^9},ExpressionUUID->"31274c7c-2332-4734-9200-\
+   3.7402520222312503`*^9, 3.7402520625070343`*^9}, 3.7402522208294196`*^9, {
+   3.740257311781172*^9, 
+   3.740257313041963*^9}},ExpressionUUID->"31274c7c-2332-4734-9200-\
 180020152e94"]
 }, Open  ]],
 
@@ -57667,10 +57647,21 @@ c0aba980dad1"],
 
 Cell[CellGroupData[{
 
-Cell["Link to the GitHub", "Item",
- CellChangeTimes->{{3.7080963065367527`*^9, 
-  3.708096309577277*^9}},ExpressionUUID->"d164cdc3-c8cc-4779-b201-\
+Cell["\<\
+Summer2018Starter/James-Bailey-Deliverables/Visualizing Neural Network \
+Results.nb \
+\>", "Item",
+ CellChangeTimes->{{3.7080963065367527`*^9, 3.708096309577277*^9}, {
+   3.740256230590263*^9, 3.7402562429266715`*^9}, 
+   3.740256281778824*^9},ExpressionUUID->"d164cdc3-c8cc-4779-b201-\
 e2e8541cd2b4"],
+
+Cell["\<\
+Summer2018Starter/James-Bailey-Deliverables/Exploring Neural Networks.nb \
+\>", "Item",
+ CellChangeTimes->{{3.7080963065367527`*^9, 3.708096309577277*^9}, 
+   3.740256233458471*^9},ExpressionUUID->"9fcad10b-d444-4371-b3cd-\
+bd11089ed699"],
 
 Cell["Explicit code", "Item",
  CellChangeTimes->{{3.708096312466115*^9, 
@@ -57687,15 +57678,38 @@ Cell["", "Section",
   3.740255866697837*^9},ExpressionUUID->"ba68b18e-0118-4694-9cc8-\
 e616df451654"],
 
-Cell["\<\
-Conclusions in Detail
+Cell[CellGroupData[{
 
-\
-\>", "Subsection",
+Cell["Conclusions in Detail", "Subsection",
  CellChangeTimes->{
-  3.736182152929455*^9, {3.740251916877751*^9, 
-   3.740251966559924*^9}},ExpressionUUID->"405e0fe7-2022-4d50-b275-\
-5f85c6659f37"]
+  3.736182152929455*^9, {3.740251916877751*^9, 3.740251966559924*^9}, {
+   3.740257222667204*^9, 
+   3.740257223125492*^9}},ExpressionUUID->"405e0fe7-2022-4d50-b275-\
+5f85c6659f37"],
+
+Cell["\<\
+Student users of the Wolfram Language at the college physics/mathematics \
+level are used to the convenience that \[OpenCurlyDoubleQuote]what happens in \
+the Wolfram Language stays in the Wolfram Language.\[CloseCurlyDoubleQuote] \
+Deep algorithmic dives routinely alternate with text explanations of those \
+forays. Instructors take advantage of this duality to teach directly from \
+notebooks.
+ 
+My premise in this project was that a more visual approach would facilitate \
+younger (Algebra II) students learning to implement and run neural networks. \
+The ability of the language to run the algorithms was never in question; what \
+I wanted to explore has been the ability of the language to offer supporting \
+material in visual form. The results to date have been very positive, limited \
+more by my unfamiliarity with the language than limitations in the language \
+itself. The ability to go seamlessly from explanation to actual computational \
+result is very motivating. It has me wondering if similar results might be \
+had in the subject of block chains.\
+\>", "Text",
+ CellChangeTimes->{{3.740257227798218*^9, 3.740257227919446*^9}, {
+  3.7402572735969105`*^9, 
+  3.7402572746656265`*^9}},ExpressionUUID->"e3a39f75-84e9-4156-b66b-\
+3ede8477e5e0"]
+}, Open  ]]
 }, Open  ]],
 
 Cell["", "Section",
@@ -57710,14 +57724,30 @@ Cell["", "Section",
   3.740255882658654*^9},ExpressionUUID->"8d03133e-d036-4673-985c-\
 415dd5ec88bb"],
 
+Cell[CellGroupData[{
+
 Cell["Future Directions", "Subsubsection",
  CellChangeTimes->{{3.7361822218287*^9, 
   3.7361822234759083`*^9}},ExpressionUUID->"9afe7952-52cb-49e5-812a-\
 edf95df8c363"],
 
+Cell["\<\
+The results described here are best characterized as proof of concept. A \
+fully realized curriculum for a secondary school needs to be deepened in the \
+areas explored here and extended in both directions. There needs to be \
+preparatory work in the portions of linear algebra (not all of it; just some \
+pieces) that come into play. Then there needs to be  a connection to the \
+varieties of training data available from the overall Wolfram environment.\
+\>", "Text",
+ CellChangeTimes->{{3.7402572505574684`*^9, 3.740257250767274*^9}, 
+   3.7402572921235156`*^9},ExpressionUUID->"7a8b05cd-ff62-4af1-9d9a-\
+d5e3100f6b9b"]
+}, Open  ]]
+}, Open  ]],
+
 Cell[CellGroupData[{
 
-Cell["", "Subsection",
+Cell["", "Section",
  CellChangeTimes->{
   3.736182238022826*^9, {3.740255889988735*^9, 
    3.7402558965490446`*^9}},ExpressionUUID->"19b709dc-5a9b-4a0e-8d93-\
@@ -57762,7 +57792,6 @@ Cell["Other information", "Subsubsection",
   3.7361822822022877`*^9}},ExpressionUUID->"5f589531-3a9b-47cd-a487-\
 fcf2f80aa83f"]
 }, Open  ]]
-}, Open  ]]
 },
 NotebookEventActions:>{
  "WindowClose" :> 
@@ -57779,7 +57808,7 @@ NotebookEventActions:>{
          ":", $CellContext`mn}], "TemplateInstructions", CellTags -> 
        "LastModified", Deployed -> True, Background -> Lighter[Gray, 0.5]]]]},
 WindowSize->{812, 752},
-WindowMargins->{{Automatic, 163}, {20, Automatic}},
+WindowMargins->{{Automatic, 177}, {-1, Automatic}},
 WindowFrameElements->{"CloseBox"},
 DockedCells->Cell[
  "Wolfram Summer School 2018", FontFamily -> "Source Sans Pro", FontSize -> 
@@ -57854,7 +57883,7 @@ StyleDefinitions->Notebook[{
 (*CellTagsOutline
 CellTagsIndex->{
  "LastModified"->{
-  Cell[561, 20, 226, 5, 51, "TemplateInstructions",ExpressionUUID->"b0e66794-cf60-4d9a-a529-f00ac0d279da",
+  Cell[561, 20, 226, 5, 51, "TemplateInstructions",ExpressionUUID->"90883cda-8393-4641-b299-8b86df94181b",
    CellTags->"LastModified"]},
  "AuthorInfo"->{
   Cell[812, 29, 218, 5, 67, "TemplateSectionHeaders",ExpressionUUID->"47541fce-e5a1-4793-b8e1-e1340b437ca6",
@@ -57872,16 +57901,16 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"LastModified", 3502465, 57855},
- {"AuthorInfo", 3502620, 57858},
- {"PosterContent", 3502778, 57861},
- {"PresentationContent", 3502946, 57864},
- {"ProjectNotes", 3503119, 57867}
+ {"LastModified", 3503289, 57884},
+ {"AuthorInfo", 3503444, 57887},
+ {"PosterContent", 3503602, 57890},
+ {"PresentationContent", 3503770, 57893},
+ {"ProjectNotes", 3503943, 57896}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[561, 20, 226, 5, 51, "TemplateInstructions",ExpressionUUID->"b0e66794-cf60-4d9a-a529-f00ac0d279da",
+Cell[561, 20, 226, 5, 51, "TemplateInstructions",ExpressionUUID->"90883cda-8393-4641-b299-8b86df94181b",
  CellTags->"LastModified"],
 Cell[CellGroupData[{
 Cell[812, 29, 218, 5, 67, "TemplateSectionHeaders",ExpressionUUID->"47541fce-e5a1-4793-b8e1-e1340b437ca6",
@@ -57924,39 +57953,46 @@ Cell[1748831, 28886, 231, 5, 67, "TemplateSectionHeaders",ExpressionUUID->"d0702
  CellTags->"ProjectNotes"],
 Cell[CellGroupData[{
 Cell[1749087, 28895, 278, 5, 44, "Subsubsection",ExpressionUUID->"c1b785be-a60a-40fe-b1f1-2d83590b38cd"],
-Cell[1749368, 28902, 1745581, 28742, 2522, "Text",ExpressionUUID->"734d1666-d502-4a7a-b47b-dcd2702f6abc"],
-Cell[3494952, 57646, 336, 6, 105, "Input",ExpressionUUID->"31274c7c-2332-4734-9200-180020152e94"]
+Cell[1749368, 28902, 1744047, 28723, 2104, "Text",ExpressionUUID->"734d1666-d502-4a7a-b47b-dcd2702f6abc"],
+Cell[3493418, 57627, 283, 5, 28, "Input",ExpressionUUID->"31274c7c-2332-4734-9200-180020152e94"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3495325, 57657, 131, 3, 44, "Subsubsection",ExpressionUUID->"6ebeefbd-4857-42fb-a308-27aaa279c47f"],
-Cell[3495459, 57662, 158, 3, 34, "Text",ExpressionUUID->"14e3781a-a52e-4548-bf74-c0aba980dad1"],
+Cell[3493738, 57637, 131, 3, 44, "Subsubsection",ExpressionUUID->"6ebeefbd-4857-42fb-a308-27aaa279c47f"],
+Cell[3493872, 57642, 158, 3, 34, "Text",ExpressionUUID->"14e3781a-a52e-4548-bf74-c0aba980dad1"],
 Cell[CellGroupData[{
-Cell[3495642, 57669, 162, 3, 31, "Item",ExpressionUUID->"d164cdc3-c8cc-4779-b201-e2e8541cd2b4"],
-Cell[3495807, 57674, 157, 3, 31, "Item",ExpressionUUID->"3cb4354c-c176-4459-9588-4c9083cd2123"]
+Cell[3494055, 57649, 311, 7, 31, "Item",ExpressionUUID->"d164cdc3-c8cc-4779-b201-e2e8541cd2b4"],
+Cell[3494369, 57658, 248, 5, 31, "Item",ExpressionUUID->"9fcad10b-d444-4371-b3cd-bd11089ed699"],
+Cell[3494620, 57665, 157, 3, 31, "Item",ExpressionUUID->"3cb4354c-c176-4459-9588-4c9083cd2123"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3496025, 57684, 143, 3, 67, "Section",ExpressionUUID->"ba68b18e-0118-4694-9cc8-e616df451654"],
-Cell[3496171, 57689, 205, 8, 105, "Subsection",ExpressionUUID->"405e0fe7-2022-4d50-b275-5f85c6659f37"]
-}, Open  ]],
-Cell[3496391, 57700, 168, 3, 67, "Section",ExpressionUUID->"aa59b7ca-7848-48f1-96cf-6286c1fabb09"],
+Cell[3494838, 57675, 143, 3, 67, "Section",ExpressionUUID->"ba68b18e-0118-4694-9cc8-e616df451654"],
 Cell[CellGroupData[{
-Cell[3496584, 57707, 143, 3, 53, "Section",ExpressionUUID->"8d03133e-d036-4673-985c-415dd5ec88bb"],
-Cell[3496730, 57712, 168, 3, 44, "Subsubsection",ExpressionUUID->"9afe7952-52cb-49e5-812a-edf95df8c363"],
-Cell[CellGroupData[{
-Cell[3496923, 57719, 176, 4, 37, "Subsection",ExpressionUUID->"19b709dc-5a9b-4a0e-8d93-1058844be4dd"],
-Cell[CellGroupData[{
-Cell[3497124, 57727, 132, 2, 44, "Subsubsection",ExpressionUUID->"6668b03b-4180-4966-b673-b20f85cb5927"],
-Cell[3497259, 57731, 219, 4, 34, "Text",ExpressionUUID->"a5e5e177-980c-46c4-8f4b-7804400a13ff"],
-Cell[CellGroupData[{
-Cell[3497503, 57739, 262, 4, 31, "Item",ExpressionUUID->"a0f68604-8bfc-4c6d-afb6-b6a38b6de7d0"],
-Cell[3497768, 57745, 211, 4, 31, "Item",ExpressionUUID->"d4791c55-e7db-46a0-8162-0eebcfa1df4d"],
-Cell[3497982, 57751, 208, 4, 31, "Item",ExpressionUUID->"5d8db494-0b61-48cf-bc42-ae38dfd76e05"]
+Cell[3495006, 57682, 245, 5, 53, "Subsection",ExpressionUUID->"405e0fe7-2022-4d50-b275-5f85c6659f37"],
+Cell[3495254, 57689, 1268, 21, 254, "Text",ExpressionUUID->"e3a39f75-84e9-4156-b66b-3ede8477e5e0"]
 }, Open  ]]
 }, Open  ]],
-Cell[3498217, 57759, 172, 3, 44, "Subsubsection",ExpressionUUID->"5f589531-3a9b-47cd-a487-fcf2f80aa83f"]
+Cell[3496549, 57714, 168, 3, 67, "Section",ExpressionUUID->"aa59b7ca-7848-48f1-96cf-6286c1fabb09"],
+Cell[CellGroupData[{
+Cell[3496742, 57721, 143, 3, 53, "Section",ExpressionUUID->"8d03133e-d036-4673-985c-415dd5ec88bb"],
+Cell[CellGroupData[{
+Cell[3496910, 57728, 168, 3, 44, "Subsubsection",ExpressionUUID->"9afe7952-52cb-49e5-812a-edf95df8c363"],
+Cell[3497081, 57733, 632, 10, 100, "Text",ExpressionUUID->"7a8b05cd-ff62-4af1-9d9a-d5e3100f6b9b"]
 }, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3497762, 57749, 173, 4, 67, "Section",ExpressionUUID->"19b709dc-5a9b-4a0e-8d93-1058844be4dd"],
+Cell[CellGroupData[{
+Cell[3497960, 57757, 132, 2, 44, "Subsubsection",ExpressionUUID->"6668b03b-4180-4966-b673-b20f85cb5927"],
+Cell[3498095, 57761, 219, 4, 34, "Text",ExpressionUUID->"a5e5e177-980c-46c4-8f4b-7804400a13ff"],
+Cell[CellGroupData[{
+Cell[3498339, 57769, 262, 4, 31, "Item",ExpressionUUID->"a0f68604-8bfc-4c6d-afb6-b6a38b6de7d0"],
+Cell[3498604, 57775, 211, 4, 31, "Item",ExpressionUUID->"d4791c55-e7db-46a0-8162-0eebcfa1df4d"],
+Cell[3498818, 57781, 208, 4, 31, "Item",ExpressionUUID->"5d8db494-0b61-48cf-bc42-ae38dfd76e05"]
+}, Open  ]]
+}, Open  ]],
+Cell[3499053, 57789, 172, 3, 44, "Subsubsection",ExpressionUUID->"5f589531-3a9b-47cd-a487-fcf2f80aa83f"]
 }, Open  ]]
 }
 ]
